@@ -229,7 +229,325 @@ const FARMING = [
 ];
 
 // ─── QUESTS ──────────────────────────────────────────────────────────────────
-const QUEST_GUIDES = [
+const QUESTS = [
+  // ── EXOTIC MISSIONS ──
+  { name:"Zero Hour", cat:"exotic", reward:"Outbreak Perfected (Exotic Pulse Rifle)", expansion:"Forsaken Era",
+    power:"1500+ recommended", players:"Solo or up to 3",
+    source:"Director → Pinnacle Ops → Zero Hour. Must be unlocked by completing the 'Enemy of My Enemy' quest on the Tangled Shore first.",
+    color:"#00e5ff",
+    steps:[
+      "Launch Zero Hour from Pinnacle Ops in the Director.",
+      "Navigate through the abandoned Cosmodrome starting from the Old Tower. The mission has a 20-minute timer — move fast and only kill what blocks your path.",
+      "Section 1 — Warehouses: Follow the linear path through broken Cosmodrome structures. Fallen Vandals and Captains patrol — kill the ones in narrow corridors, sprint past open rooms.",
+      "Section 2 — Underground passage: Drop into the underground section. Follow the glowing vent lights. Crouch through the low-ceiling areas.",
+      "Section 3 — Saboteur room: Use the Fallen control panel to open the blast door. This room has a large Fallen ambush — clear the room fast and interact with the console on the elevated platform.",
+      "Section 4 — Ventilation shafts: Parkour section through vertical shafts. Follow the light trail upward. No enemies — just move quickly.",
+      "Boss — Aksiniks, Bound by Honor: A Fallen Captain with Arc shields. Break Arc shields first (use Arc Energy weapon), then burst him down. He calls in reinforcement Vandals at 50% health — kill them fast so they don't overwhelm you. He staggers on heavy hits.",
+      "Loot the chest behind the boss. Outbreak Perfected is in your rewards. The mission can be replayed weekly for red border Deepsight drops to unlock the crafting pattern.",
+    ],
+    tip:"With a 20-minute timer, every second matters. Prioritize the path over kills. If you have a 3-person fireteam, assign one person to hold enemies while the other two sprint the route." },
+
+  { name:"The Whisper", cat:"exotic", reward:"Whisper of the Worm (Exotic Sniper Rifle)", expansion:"Warmind Era",
+    power:"1500+ recommended", players:"Solo or up to 3",
+    source:"Director → Pinnacle Ops → The Whisper.",
+    color:"#a855f7",
+    steps:[
+      "Launch The Whisper from Pinnacle Ops.",
+      "Section 1 — Taken Blight Maze: Navigate through layers of Taken corruption. The portals glow purple — enter each one to advance. Kill Taken Acolytes and Thralls as you push through. There is no timer on this section.",
+      "Section 2 — Jumping Puzzle: Reach the central Taken corruption chamber. An extensive jumping sequence follows — you will navigate through floating platforms, gravity-inverted corridors, and zero-gravity sections. Take your time. Falls reset you to the nearest checkpoint.",
+      "Key jump landmarks: the crumbling staircase (jump between the left-side ledges), the rotating cylinder (time the jump to the stable platform at the top), the final gap before the boss room (double-jump across and immediately vault right).",
+      "Boss Room — 3 Taken Minotaurs + Blight: The boss room has a pulsing Blight orb that regenerates all enemy health if left alive. Priority: kill both flanking Minotaurs in each wave FIRST, then shoot the Blight orb to destroy it. Once the Blight is down, damage the boss Minotaur before the next phase begins.",
+      "Repeat the Minotaur-then-Blight sequence for 3 full phases. After the third phase, the boss Minotaur falls and a chest spawns in the center of the room.",
+      "Open the chest. Whisper of the Worm is inside.",
+    ],
+    tip:"The jumping puzzle is where most players fail or give up. The zero-gravity section has a consistent path — hug the right wall the entire way through and you'll find every platform. Practice it a few times — it becomes muscle memory." },
+
+  { name:"Presage", cat:"exotic", reward:"Dead Man's Tale (Exotic Scout Rifle)", expansion:"Season of the Chosen",
+    power:"1500+ recommended", players:"Solo recommended (better rewards) or up to 3",
+    source:"Director → Pinnacle Ops → Presage. Start the mission from the Tangled Shore patrol zone.",
+    color:"#f97316",
+    steps:[
+      "Board the Glykon, a derelict Cabal ship. The mission has horror atmosphere — reduced visibility, ambient sound cues, narrow corridors.",
+      "Section 1 — Cargo Hold: Navigate through the lower cargo bay. Activate the yellow console on the right wall to open the blast door ahead.",
+      "Section 2 — Power Restoration: Find 3 power nodes scattered across different sections of the ship. Each node is in a separate area connected by ventilation shafts — crawl through the vents to reach each one. Activate all 3.",
+      "Section 3 — Rotating Airlocks: The ship has sections that rotate on a timer. Watch the ceiling indicators — they flash before the room rotates. Time your movement through each rotating section during the still window.",
+      "Section 4 — Scorn Infestation: The lower decks are overrun with Scorn. Fight through Raiders, Lurkers, and two Scorn Chieftains to reach the bridge elevator.",
+      "Final Boss — Katabasis (Scorn Chieftain): Katabasis fires a tracking projectile that homes onto you. Dodge behind pillars immediately when you see it launch — never dodge in open space. During the vulnerable phase (when his shield drops), dump all your damage into him. Heavy ammo priority. Repeat 3 damage phases.",
+      "Open the chest on the bridge. Dead Man's Tale is your reward. Solo completions have a weekly chance to drop a curated roll.",
+    ],
+    tip:"Dead Man's Tale has one of the most distinct exotic perks in the game (stacking precision hits increase fire rate). The solo clear bonus gives you better roll chances — attempt it solo once you're confident with the rotating sections." },
+
+  { name:"Harbinger", cat:"exotic", reward:"Hawkmoon (Exotic Hand Cannon)", expansion:"Season of the Hunt",
+    power:"1300+ recommended", players:"1–3",
+    source:"Pick up 'Bird of Prey' quest from Crow in the Tower (Annex area, right side). He appears after completing the Season of the Hunt intro quest.",
+    color:C.gold,
+    steps:[
+      "Accept 'Bird of Prey' from Crow in the Tower Annex.",
+      "Travel to the EDZ. The mission marker sends you to Harbinger's Seclude in the southern EDZ.",
+      "Enter the cave system. As you push through, 5 golden Feathers are hidden throughout the mission area. They glow gold and emit an audio tone when you're within 10 meters.",
+      "Feather Locations: (1) In the first open cave chamber, on a ledge to the left. (2) Above the waterfall in the second section — jump up the cliffside. (3) In the mid-mission ravine, behind a large boulder on the right. (4) Inside the Taken bubble room, on the raised platform. (5) Right before the boss room, tucked in the left alcove.",
+      "Fight through Taken patrols. The mission has no timer — explore thoroughly for all Feathers.",
+      "Boss — Savek, Eyes of Malice (Taken Captain): Void shields. Use a Void Energy weapon to break shields fast — the explosion from breaking shields staggers nearby adds. Standard Taken Captain fight after the shield is down.",
+      "Return to Crow in the Tower with all 5 Feathers collected. Hawkmoon is your reward.",
+    ],
+    tip:"If you miss a Feather, you can replay Harbinger as many times as needed. The Feathers carry over between runs — you don't lose progress. The mission is replayable weekly for Hawkmoon rolls." },
+
+  { name:"Operation: Seraph's Shield", cat:"exotic", reward:"Revision Zero (Exotic Pulse Rifle)", expansion:"Season of the Seraph",
+    power:"1550+ recommended", players:"Solo or 1–3",
+    source:"Director → Pinnacle Ops → Operation: Seraph's Shield.",
+    color:C.arc,
+    steps:[
+      "Launch from Pinnacle Ops. You board an orbital Warmind station above Earth.",
+      "Section 1 — Warmind Bunker: Navigate through the bunker entrance. Find 2 yellow Warmind consoles and activate them to disable the initial security lockdown.",
+      "Section 2 — Station Exterior: Exit onto the station hull. Precision platforming required across exposed girders with Earth visible below. Fall = reset to last checkpoint. The path is marked by yellow Warmind light panels.",
+      "Section 3 — Core Override: Find 3 Warmind Core fragments inside the station. Each is in a separate locked room — activate the security panel outside each room (requires killing the nearby Hive Wizard to drop the access key).",
+      "Bring all 3 Cores to the central override console. Interact to bypass security.",
+      "Boss — Akelous, The Siren's Current (Vex Hydra variant): Akelous has a unique shield — she faces it FORWARD, so her eye is protected from the front. Flank her to either side and shoot her directly. She spins to face you — sidestep constantly while shooting. During adds waves, keep distance and use the pillars for cover. Damage her from the flanks in all 3 phases.",
+      "Loot the final chest. Revision Zero drops here. Weekly replays grant crafting pattern progress.",
+    ],
+    tip:"Revision Zero has a secret alternate fire mode — aiming down sights charges a burst shot. The charged shot is exceptionally powerful against champions and bosses. Unlock the catalyst to fully enable this mode." },
+
+  { name:"Warlord's Ruin — Buried Bloodline Secret", cat:"exotic", reward:"Buried Bloodline (Exotic Shotgun)", expansion:"Season of the Wish",
+    power:"1800+ recommended", players:"1–3 (dungeon)",
+    source:"Launch Warlord's Ruin dungeon from the Director. The secret quest is hidden inside — it does NOT appear in your Quest log until you find the trigger.",
+    color:C.void,
+    steps:[
+      "Enter Warlord's Ruin dungeon. Play through normally until you reach the first waterfall room (before the first encounter).",
+      "Look for a breakable wall behind the main waterfall. It blends with the environment — shoot it with any weapon to reveal a hidden passage.",
+      "Follow the hidden path behind the wall. A short platforming sequence leads to a sealed chamber.",
+      "Inside the chamber: interact with the 'Warden's Thorn' artifact. This starts the hidden Buried Bloodline questline.",
+      "Now complete the dungeon normally. In EACH of the 3 encounters, a second hidden 'Warden's Thorn' is concealed somewhere in the encounter arena. Find and interact with each one before completing the encounter.",
+      "Encounter 1 Thorn location: On the upper ledge, right side of the arena, behind the large pillar.",
+      "Encounter 2 Thorn location: In the flooded lower section, submerged behind the far left wall.",
+      "Encounter 3 (Riven) Thorn location: On the back wall of the boss chamber, behind the crystal formation on the right.",
+      "After collecting all 3 Thorns and completing the final boss, a hidden altar appears near the chest. Interact with it. Buried Bloodline drops here.",
+    ],
+    tip:"Buried Bloodline has the Devour perk (kills restore health and extend duration). Combined with Void subclass, it creates a self-sustaining health loop — every shotgun kill heals you to full. Exceptional for solo dungeon content." },
+
+  { name:"Oblation: Bloodline (Monument of Triumph)", cat:"exotic", reward:"Cull's Shadow (Exotic Auto Rifle)", expansion:"Monument of Triumph · Jun 2026",
+    power:"1950+ recommended", players:"Solo (unlock) then mission",
+    source:"Equip a Weapon of Sorrow (Thorn, Osteo Striga, Necrochasm, or Touch of Malice) and run the Scarlet Keep Strike on the Moon.",
+    color:C.red,
+    steps:[
+      "Equip any Weapon of Sorrow: Thorn, Osteo Striga, Necrochasm, or Touch of Malice. These are the only weapons that trigger the unlock.",
+      "Launch the Scarlet Keep Strike from the Moon patrol zone (not Nightfall — the base strike).",
+      "At the bottom of the first descent into the Scarlet Keep, look for a chamber that is normally sealed. With a Weapon of Sorrow equipped, the seal breaks and the chamber opens. Enter it.",
+      "Interact with the Hive altar inside the hidden chamber. This starts the Oblation questline and adds the first quest step.",
+      "Return to Moon patrol. Three secret data caches appear as new map markers across the Moon. Visit each cache location and interact with them. Enemies spawn at each cache — kill them all before the cache becomes accessible.",
+      "With all 3 caches collected, Oblation: Bloodline becomes accessible in Pinnacle Ops (it does NOT appear as a map icon — open the Director and look in Pinnacle Ops).",
+      "Complete the Oblation: Bloodline mission — it has 5 sections through the Scarlet Keep with new elite Hive enemy variants. Stay mobile — the new enemies apply a Void curse debuff on hit.",
+      "Cull's Shadow drops on completion. Run Oblation: Soulfed and Oblation: Immolation for all 4 catalysts.",
+    ],
+    tip:"Cull's Shadow's exotic perk reads enemy health bars and increases damage as enemies get lower. It effectively gets stronger on every kill. The final catalyst from Immolation makes it one-shot minors at max stacks — exceptional for clearing large rooms." },
+
+  // ── CAMPAIGN QUEST CHAINS ──
+  { name:"A Guardian Rises (New Light)", cat:"campaign", reward:"Access to the full base game", expansion:"Free to Play",
+    power:"Any", players:"Solo",
+    source:"Automatically begins when you create a new character.",
+    color:C.green,
+    steps:[
+      "Complete the intro mission on the Cosmodrome — follow Shaw Han and learn basic movement, combat, and abilities.",
+      "Unlock the Director and visit the Tower for the first time. Meet Zavala, Shaxx, the Drifter, Ikora, and Tess Everis.",
+      "Pick up introductory quests from each vendor — they guide you through basic Strike, Crucible, and Gambit.",
+      "Complete the seasonal New Light content Shaw Han assigns on the Cosmodrome.",
+      "Once the base quest is done, choose any expansion campaign to continue. Recommended order: Shadowkeep → Beyond Light → Witch Queen → Lightfall → The Final Shape.",
+    ],
+    tip:"Don't try to do everything at once in New Light. Focus on completing one expansion campaign at a time. The Power level raises naturally through campaign play." },
+
+  { name:"Shadowkeep Campaign — Veil of Darkness", cat:"campaign", reward:"Pit of Heresy dungeon, Nightmare Hunts, access to Garden of Salvation raid", expansion:"Shadowkeep",
+    power:"750+ (legacy)", players:"Solo",
+    source:"Talk to Eris Morn on the Moon. She gives you 'A Mysterious Disturbance' to begin.",
+    color:"#94a3b8",
+    steps:[
+      "Accept 'A Mysterious Disturbance' from Eris Morn on the Moon.",
+      "Complete 8 campaign missions on the Moon — they follow a linear order from your quest log.",
+      "Key missions: The Scarlet Keep (assault the tower), Depth of Power (fight Nightmares), The Deathbringer (exotic quest branch — pickup optional), In the Deep (boss fight at the base of the Keep).",
+      "After the campaign, unlock Nightmare Hunts — weekly rotating missions hunting specific Nightmare bosses for upgrades.",
+      "Pit of Heresy dungeon unlocks after campaign completion — enter it for unique armor and the dungeon exotic (Xenophage, if you complete the hidden questline inside).",
+      "Garden of Salvation raid is the endgame — 6-player, requires a coordinated fireteam.",
+    ],
+    tip:"The Deathbringer exotic quest branches off during Shadowkeep — it's a Void rocket launcher. Pick up 'Memory of Sai Mota' from Eris mid-campaign. Don't skip it." },
+
+  { name:"Beyond Light Campaign — Empire's Fall + Born in Darkness", cat:"campaign", reward:"Stasis subclass for all 3 classes", expansion:"Beyond Light",
+    power:"1100+ (legacy)", players:"Solo",
+    source:"Travel to Europa. Variks gives you 'The Dark Priestess' to begin.",
+    color:C.stasis,
+    steps:[
+      "Accept 'The Dark Priestess' from Variks on Europa.",
+      "Complete 8 campaign missions on Europa. The campaign follows Eramis, the Fallen Kell, as she weaponizes Stasis.",
+      "Final campaign boss — Eramis: Fight her in the Riis-Reborn Approach. She uses Stasis attacks. Dodge her large ice projectiles by strafing sideways — they are slow but large. Stay mobile and shoot during her pauses between attacks. 3 phases.",
+      "After the campaign: visit the Exo Stranger. She gives you 'Born in Darkness Part 1' — this is the Stasis unlock quest chain.",
+      "Born in Darkness Part 1–4: Each part requires completing specific Europa activities with Stasis equipped. Part 1: kill 50 enemies with Stasis. Part 2: complete Exo Challenges and collect Entropic Shards. Part 3: complete specific strikes and patrol activities. Part 4: hunt Nightmares on Europa.",
+      "Each completed Part unlocks new Stasis Aspects and Fragments for your class.",
+      "Deep Stone Crypt raid unlocks — the endgame 6-player activity for this expansion.",
+    ],
+    tip:"The Entropic Shards in Born in Darkness Part 2 require the Salvation's Grip grenade launcher to break. Get Salvation's Grip first (quest from the Drifter after the campaign) before starting Part 2." },
+
+  { name:"The Witch Queen Campaign — The Arrival", cat:"campaign", reward:"Weapon Crafting system, Glaive weapon type, Vow of the Disciple raid", expansion:"The Witch Queen",
+    power:"1350+ (legacy)", players:"Solo — Legendary difficulty recommended",
+    source:"Speak to Ikora Rey in the Tower. She gives you 'The Arrival' when you own the expansion.",
+    color:C.void,
+    steps:[
+      "Speak to Ikora in the Tower. Accept 'The Arrival'.",
+      "Travel to Savathun's Throne World. Complete 8 campaign missions following Savathun's deception plot.",
+      "Key mission: 'The Mirror' — build a weapon at the Enclave on Mars. This is your first crafting experience. Follow the prompts to understand the red border / Deepsight system.",
+      "Campaign bosses include Savathun's Lucent Hive — they can resurrect unless you stomp on their Ghost after killing them. Always stomp the floating Ghost immediately after a Lucent Hive boss dies.",
+      "After the campaign: The Enclave on Mars fully unlocks. Start collecting red border weapons across all activities.",
+      "'The Wellspring' activity unlocks on Savathun's Throne World — rotating activity that drops craftable weapons and throne world gear.",
+      "Vow of the Disciple raid is the endgame — mechanically complex, requires communication. Great exotic: Lubrae's Ruin (Void trace rifle from final boss secret chest).",
+    ],
+    tip:"Play The Witch Queen on Legendary difficulty if you can. It rewards you with gear that immediately puts you at the expansion's soft cap Power level — saving hours of grinding. The story is also significantly better on Legendary with extra dialogue." },
+
+  { name:"Lightfall Campaign — Mayday", cat:"campaign", reward:"Strand subclass for all 3 classes, Final Warning exotic sidearm", expansion:"Lightfall",
+    power:"1600+ recommended", players:"Solo",
+    source:"Launch 'Mayday' from the Director after purchasing Lightfall. Begins automatically when you reach Neomuna.",
+    color:C.strand,
+    steps:[
+      "Land on Neomuna (Neptune). The campaign begins with 'Mayday'.",
+      "Complete 8 campaign missions. The story follows Calus attacking Neomuna with the Shadow Legion.",
+      "Strand unlocks mid-campaign — you'll experience it first during 'The Rescue' mission when crossing the Veil barrier.",
+      "After fully unlocking Strand, complete 'The Final Strands' quest from Nimbus on Neomuna. This gives you your first Strand Aspects and Fragments.",
+      "Final campaign boss — Calus, Disciple of the Witness: 3-phase fight on the Typhon Imperator ship. Solar damage recommended. Phase 1: survive the arena while shooting the weak points that appear on his back. Phase 2: navigate across the ship's exterior while he pursues. Phase 3: sustained DPS on his head and shoulder weak points.",
+      "After the campaign, complete Nimbus's follow-up quest to receive Final Warning (Exotic Strand Sidearm — one of the best weapons in the game).",
+      "Root of Nightmares raid unlocks — the endgame 6-player, most accessible raid in the game for beginners.",
+    ],
+    tip:"Final Warning has Strand-based homing rounds that track enemies. Its exotic perk essentially removes the need to aim precisely at agile targets. It pairs exceptionally well with any Strand subclass build." },
+
+  { name:"The Final Shape Campaign — Transmigration", cat:"campaign", reward:"Prismatic subclass for all 3 classes, Exotic Class Items", expansion:"The Final Shape",
+    power:"1800+ recommended", players:"Solo — Legendary recommended",
+    source:"Launch 'Transmigration' from the Director. Available after purchasing The Final Shape.",
+    color:C.prismatic,
+    steps:[
+      "Launch 'Transmigration' from the Director.",
+      "Enter The Pale Heart (inside The Traveler). Complete 10 campaign missions — the conclusion of the Light vs Darkness story.",
+      "Prismatic subclass unlocks during the campaign — you receive it during 'Alone in the Dark' mission when you reach the Pale Heart's core.",
+      "After unlocking Prismatic, complete 'Alone in the Dark' to receive your first class-specific Prismatic Aspects and Fragments.",
+      "Final boss — The Witness (solo version): Epic encounter across 3 phases inside a Traveler-fragment arena. Phase 1: destroy 4 pylons around the arena while avoiding beam attacks. Phase 2: platform across collapsing Traveler geometry while dealing damage. Phase 3: sustained DPS phase — use everything you have. This is the most important DPS check in the entire game.",
+      "Post-campaign: 'Dual Destiny' exotic mission unlocks — requires exactly 2 players with Prismatic. Rewards an Exotic Class Item with random exotic perk combinations.",
+      "Salvation's Edge raid unlocks — the hardest, most mechanically complex raid ever made in Destiny 2.",
+    ],
+    tip:"The Exotic Class Items from Dual Destiny roll with 2 random exotic armor perks from your class's pool — combined on one item. Some combinations are build-defining (Synthoceps + Inmost Light on Titan, Getaway Artist + Fallen Sunstar on Warlock). Farm it." },
+
+  { name:"Forsaken Campaign — Nothing Left to Say", cat:"campaign", reward:"Access to Dreaming City, Shattered Throne dungeon, Forsaken exotics", expansion:"Forsaken",
+    power:"750+ (legacy)", players:"Solo",
+    source:"Speak to Spider in the Tangled Shore. 'Nothing Left to Say' begins after the intro mission.",
+    color:C.orange,
+    steps:[
+      "Accept 'Nothing Left to Say' from Spider in the Tangled Shore.",
+      "Complete 8 campaign missions across the Tangled Shore and Dreaming City. The story follows Cayde-6's death at the hands of Uldren Sov and your hunt for the 8 Barons.",
+      "Baron hunts: each mission targets a specific Baron from the Scorn. Each Baron has a unique mechanic — the Hangman uses rope-swinging attacks, the Mindbender summons Nightmares, the Rifleman fights from a distance with a sniper, etc. Learn each Baron's pattern before going aggressive.",
+      "Final mission — The Mad Prince: Hunt Uldren Sov in the Watchtower. He summons Taken projectile barrages and has regenerating shields. When he goes immune, destroy the Taken crystals that appear around the arena to drop the shield. 3 phases.",
+      "After the campaign, Dreaming City unlocks — a patrol zone with a 3-week curse cycle that changes enemy density and rewards each week.",
+      "Shattered Throne dungeon unlocks inside Dreaming City — only accessible during certain curse weeks. Check the curse cycle before attempting.",
+      "Forsaken exotic quests unlock from Spider and Petra Venj.",
+    ],
+    tip:"The Dreaming City curse cycle (week 1 light, week 2 medium, week 3 heavy curse) changes what drops and what encounters are available. The Shattered Throne dungeon and some secrets are only accessible during heavy curse week." },
+
+  { name:"The Edge of Fate Campaign", cat:"campaign", reward:"Desert Perpetual raid, Pantheon difficulty system, Tier 4–5 armor, new subclass aspects", expansion:"The Edge of Fate · Jul 2025",
+    power:"2000+ recommended", players:"Solo — Legendary recommended",
+    source:"Launch from the Director after purchasing The Edge of Fate. Campaign begins automatically at the new destination.",
+    color:C.blue,
+    steps:[
+      "Launch the campaign from the Director. The Edge of Fate takes place in a new destination revealed through the Edge of Fate prophecy from Renegades lore.",
+      "Complete 9 campaign missions. The story continues the post-Final Shape universe with new Vanguard leadership under Ikora.",
+      "New enemy types are introduced mid-campaign — modified Vex with Darkness-infused cores. They have Stasis shields (blue) in addition to standard Void. Bring mixed element loadouts.",
+      "The campaign introduces the Tier 5 armor system through tutorial missions — you earn your first Tier 5 piece mid-campaign.",
+      "After completing the campaign: the Pantheon modifier system unlocks. Pantheon lets you add modifier cards to any raid or dungeon to increase difficulty and rewards.",
+      "Desert Perpetual raid unlocks as the expansion endgame. It has 5 encounters and awards Tier 4–5 armor on completion. Master difficulty gives Tier 5.",
+      "Complete the post-campaign quest 'Aftermath' from Ikora to receive your new subclass Aspects for all classes.",
+    ],
+    tip:"The Pantheon system is one of the deepest difficulty customization tools in Destiny history. Stack modifier cards to increase Tier drops — the right modifier combo can make any raid drop Tier 5 gear without doing Master difficulty." },
+
+  { name:"Renegades Campaign — Lawless Frontier", cat:"campaign", reward:"Lawless Frontier destinations (Mars, Venus, Europa), Equilibrium dungeon, Renegades exotic weapon", expansion:"Renegades · Dec 2025",
+    power:"2020+ recommended", players:"Solo",
+    source:"Speak to the Drifter at Tharsis Outpost on Mars. 'The Arrangement' begins the campaign.",
+    color:C.red,
+    steps:[
+      "Travel to the Tharsis Outpost on Mars — the new social hub replacing part of the Tower's role for this expansion.",
+      "Speak to the Drifter. Accept 'The Arrangement' to begin. Eris Morn and Praxic Warlock Aunor Mahal join as key NPCs.",
+      "Complete 10 campaign missions tracking Dredgen Bael — a former Guardian turned villain — across Mars, Venus, and Europa.",
+      "Key mechanic: the Renegades factions (Cabal Barant Imperium, Fallen Oathbreakers, Vex Recursion) each control territory in the Lawless Frontier. Different missions have you working with or against each faction.",
+      "Mid-campaign: you earn access to the Lawless Frontier territories. Unlike patrol zones, each territory has 2 selectable mission-style areas with bounties — no free roam.",
+      "Final boss — Dredgen Bael: Corrupted Guardian with a full Guardian ability set. He uses Golden Gun, Void suppression, and Stasis freezing. Counter each ability: dodge the Golden Gun shot (single projectile, predictable), break out of Stasis by meleeing, and use Barrier Champions as cover during the Void suppression phase.",
+      "After campaign completion: Equilibrium dungeon unlocks on Venus. Complete it for the expansion's pinnacle armor.",
+      "The Renegades exotic weapon quest unlocks from each of the 3 faction leaders — completing all 3 and doing the final Oblation-style exotic mission rewards the expansion's signature exotic.",
+    ],
+    tip:"Renegades is the final expansion before Monument of Triumph. After completing it, the full Lawless Frontier territory system gives you an entirely new repeatable loop separate from the main game's Pathfinder. Farm the Equilibrium dungeon for the last batch of Tier 5 armor before the final sandbox locked in June 2026." },
+  { name:"Dual Destiny — Exotic Class Item", cat:"key", reward:"Exotic Class Item (random 2-perk combo)", expansion:"The Final Shape",
+    power:"1800+ recommended", players:"EXACTLY 2 — no solo, no 3+",
+    source:"Complete The Final Shape campaign → 'Alone in the Dark' unlocks Dual Destiny as a mission in The Pale Heart patrol zone.",
+    color:C.prismatic,
+    steps:[
+      "BOTH players must have Prismatic subclass unlocked. This is the only requirement.",
+      "Both players enter The Pale Heart patrol zone. One player must have a Light-aligned subclass active (Solar, Arc, or Void in Prismatic counts if you have matching Aspects). One player must have a Dark-aligned subclass (Stasis or Strand Aspects in Prismatic).",
+      "Navigate together to the hidden mission entrance — it's in the central-north area of the Pale Heart, marked by a floating Darkness pyramid symbol. Interact together.",
+      "Puzzle rooms: each room requires one player to activate nodes on the Light side while the other shoots barriers on the Dark side — simultaneously. Communication is essential. Call out 'activating' and 'clear' for each room.",
+      "Mid-mission encounter: a mirrored boss fight where each player fights their own version. Focus on YOUR boss — do not cross sides.",
+      "Final boss: both players must simultaneously deal damage to opposite weak points on the boss's body. One player takes the left side, one takes the right. Coordinate your damage windows.",
+      "Exotic Class Item drops at the end for BOTH players. Roll is completely random — 2 exotic perks from your class pool. Highly replayable.",
+    ],
+    tip:"The best rolls to chase: Hunter — Caliban's Hand + Gyrfalcon's Hauberk (invisibility loop). Titan — Spirit of Synthoceps + Spirit of Inmost Light (melee damage + ability regen). Warlock — Spirit of Getaway Artist + Spirit of Fallen Sunstar (Arc Soul + ability recharge). Farm until you get one of these." },
+
+  { name:"In the Deep — Wicked Implement", cat:"key", reward:"Wicked Implement (Exotic Stasis Sniper Rifle)", expansion:"Season of the Deep",
+    power:"1750+ recommended", players:"1–3",
+    source:"Play the Deep Dive seasonal activity on Titan. The quest triggers automatically after your first Deep Dive run.",
+    color:C.stasis,
+    steps:[
+      "Play the Deep Dive seasonal activity — it's accessible from the Titan patrol zone or the Director.",
+      "After your first completion, Ahsa (the Titan whale NPC) gives you the 'In the Deep' quest.",
+      "Collect 3 Strands of Memory: each drops from the final boss of a Deep Dive run. You need 3 separate completions to get all 3.",
+      "Return all 3 Strands to Ahsa.",
+      "The secret encounter unlocks: during a Tier 3 Deep Dive run, 3 glowing wells appear throughout the dive. All 3 must be activated simultaneously by 3 players (each standing at one well).",
+      "If timed correctly, all 3 wells activate together and a hidden path opens below the final boss room.",
+      "Follow the hidden path to a secret boss encounter. Defeat it and open the chest. Wicked Implement drops here.",
+    ],
+    tip:"The 3-player simultaneous well activation is the hardest part. Call out positions before the run: player 1 takes the first well (left corridor), player 2 takes the second well (center platform), player 3 takes the third well (right tunnel). Use voice comms and count down '3-2-1-activate'." },
+
+  { name:"The Navigator — Strand Bow", cat:"key", reward:"The Navigator (Exotic Strand Glaive/Bow hybrid)", expansion:"Root of Nightmares",
+    power:"1800+ recommended", players:"1–6 (raid/mission)",
+    source:"Complete Root of Nightmares raid once. A secret quest item drops from the Explicator boss (second encounter) — not guaranteed, may require multiple runs.",
+    color:C.strand,
+    steps:[
+      "Complete Root of Nightmares raid. During the Explicator encounter (second boss), look for a secret chest hidden in the back of the encounter arena after killing Explicator.",
+      "If the quest item 'Nástroje Osudu' drops, pick it up. It starts 'At the Gates' quest in your Quest log.",
+      "Complete the 'At the Gates' objectives: kill 100 enemies with Strand weapons, complete 5 Strand-related Seasonal Challenges, and complete Root of Nightmares once more.",
+      "Return to the Hawthorn constellation in Root of Nightmares (the lore area between encounters). Interact with the terminal that now appears.",
+      "The Navigator is awarded.",
+    ],
+    tip:"The Navigator fires Strand projectiles that create Threadling spawns on hit — it functionally generates Strand ability energy through weapon use alone. Exceptional on Threadrunner Hunter and Broodweaver Warlock builds." },
+
+  // ── WEEKLY QUESTS ──
+  { name:"Xenology — Weekly Exotic Cipher", cat:"weekly", reward:"1 Exotic Cipher (spend at Monument of Lost Lights)", expansion:"All",
+    power:"Any", players:"Solo",
+    source:"Pick up from Xûr in the Tower Bazaar every Friday at 10am PDT. Check his second inventory tab.",
+    color:C.gold,
+    steps:[
+      "Visit Xûr in the Tower Bazaar every Friday (he's always in the alley to the right of the Ramen Shop in the Courtyard area — no longer rotates).",
+      "Open his inventory. Go to his SECOND tab (not the main shop) and pick up the Xenology bounty. It's free.",
+      "Complete the Xenology requirement: 21 Strikes (any difficulty) OR win Crucible or Gambit matches. Wins in Crucible/Gambit count for significantly more progress than losses.",
+      "Once complete, Xenology becomes an 'Exotic Cipher' in your inventory.",
+      "Take the Exotic Cipher to the Monument of Lost Lights in the Tower (between the vault terminals). Spend it to purchase any vaulted Exotic weapon you're missing.",
+      "You can hold a maximum of 5 Exotic Ciphers at once. Don't let them pile up without spending.",
+    ],
+    tip:"The fastest Xenology completion is 21 Strike runs — take about 2 hours. Crucible wins count for ~3× the progress of Strike completions. If you're comfortable with Crucible, 7 wins completes Xenology faster than 21 Strikes." },
+
+  { name:"Pathfinder — Weekly Progression Track", cat:"weekly", reward:"XP, reputation, Bright Dust, Engrams", expansion:"All",
+    power:"Any", players:"Solo or fireteam",
+    source:"Open the Director → Pathfinder tab (bottom of the screen). Available to all players.",
+    color:C.teal,
+    steps:[
+      "Open the Director and select the Pathfinder tab at the bottom.",
+      "The Pathfinder shows a branching tree of objectives. Each node is a challenge tied to a core playlist (Strikes, Crucible, Gambit) or seasonal activity.",
+      "Complete objectives by playing the listed activities. Objectives auto-track — no need to 'equip' them like old bounties.",
+      "Completing a node rewards XP toward your Artifact Power bonus.",
+      "Reaching end nodes in a branch rewards larger loot (engrams, Bright Dust, seasonal materials).",
+      "The Pathfinder resets every Tuesday at the weekly reset. Full completion each week maximizes your Artifact Power gain.",
+    ],
+    tip:"Stack Pathfinder with your normal farming. If Pathfinder asks for 10 Strike completions and you're farming Nightfall weapons anyway — you complete both simultaneously. Never do Pathfinder in isolation." },
+];
+const QUEST_CATS = ["all","exotic","campaign","key","weekly"];
+const QUEST_CAT_LABELS = { all:"ALL QUESTS", exotic:"EXOTIC MISSIONS", campaign:"CAMPAIGNS", key:"KEY QUESTS", weekly:"WEEKLY" };
+const QUEST_CAT_COLORS = { all:C.blue, exotic:C.gold, campaign:C.purple, key:C.prismatic, weekly:C.teal };
   { name:"Exotic Quests — How They Work", color:C.gold, icon:"🌟",
     how:"Exotic quest weapons are available from specific vendors or from completing quests in your Quest log. In the Monument of Triumph state, most exotic quests are permanently available. Start them from the Quest Archive kiosk in the Tower lobby.",
     find:"Tower → Quest Archive kiosk → Filter by 'Exotic Quests'. Every legacy exotic quest is listed here.",
@@ -695,6 +1013,7 @@ export default function Destiny2Guide() {
   const [expanded, setExpanded] = useState(null);
   const [classExpanded, setClassExpanded] = useState(null);
   const [classFilter, setClassFilter] = useState("hunter");
+  const [questCat, setQuestCat] = useState("all");
   const [search, setSearch] = useState("");
   const f = (s) => (s||"").toLowerCase().includes(search.toLowerCase());
 
@@ -709,7 +1028,7 @@ export default function Destiny2Guide() {
             <span style={{fontSize:10,letterSpacing:5,color:`${C.blue}88`}}>BUNGIE · 2017–2026 · MONUMENT OF TRIUMPH FINAL SANDBOX</span>
           </div>
           <h1 style={{fontSize:22,fontWeight:900,letterSpacing:3,margin:"5px 0 3px",color:C.textBright,textTransform:"uppercase",textShadow:`0 0 24px ${C.blue}33`}}>DESTINY 2 FIELD GUIDE</h1>
-          <p style={{fontSize:11,color:C.textDim,letterSpacing:2,margin:0}}>
+          <p style={{fontSize:15,color:C.textDim,letterSpacing:2,margin:0}}>
             COMPLETE REFERENCE · 10 EXPANSIONS · 3 CLASSES · 18 SUBCLASSES · ALL ACTIVITIES
           </p>
         </div>
@@ -757,8 +1076,8 @@ export default function Destiny2Guide() {
                         <div style={{display:"flex",alignItems:"center",gap:10}}>
                           <span style={{fontSize:16}}>{w.icon}</span>
                           <div>
-                            <div style={{fontSize:14,color:C.textBright,fontWeight:700}}>{w.slot} Slot</div>
-                            <div style={{fontSize:11,color:C.textDim}}>Ammo: {w.ammo}</div>
+                            <div style={{fontSize:16,color:C.textBright,fontWeight:700}}>{w.slot} Slot</div>
+                            <div style={{fontSize:15,color:C.textDim}}>Ammo: {w.ammo}</div>
                           </div>
                         </div>
                         <span style={{color:C.blue,fontSize:14,flexShrink:0}}>{open?"▲":"▼"}</span>
@@ -766,12 +1085,12 @@ export default function Destiny2Guide() {
                       {open && (
                         <div style={{padding:"12px 14px"}}>
                           <div style={{marginBottom:8,background:`${C.blue}08`,padding:"8px 10px",borderLeft:`2px solid ${C.blue}44`}}>
-                            <div style={{fontSize:10,letterSpacing:2,color:C.blue,marginBottom:3}}>DAMAGE TYPE</div>
-                            <div style={{fontSize:12,color:C.text}}>{w.dmgType}</div>
+                            <div style={{fontSize:12,letterSpacing:2,color:C.blue,marginBottom:3}}>DAMAGE TYPE</div>
+                            <div style={{fontSize:14,color:C.text}}>{w.dmgType}</div>
                           </div>
-                          <div style={{fontSize:13,color:C.text,lineHeight:1.8,marginBottom:8}}>{w.strength}</div>
-                          <div style={{fontSize:13,color:C.textDim,lineHeight:1.7,marginBottom:8}}>{w.use}</div>
-                          <div style={{background:`${C.gold}08`,padding:"8px 10px",borderLeft:`2px solid ${C.gold}44`,fontSize:12,color:C.gold}}>⚡ {w.tip}</div>
+                          <div style={{fontSize:15,color:C.text,lineHeight:1.8,marginBottom:8}}>{w.strength}</div>
+                          <div style={{fontSize:15,color:C.textDim,lineHeight:1.7,marginBottom:8}}>{w.use}</div>
+                          <div style={{background:`${C.gold}08`,padding:"8px 10px",borderLeft:`2px solid ${C.gold}44`,fontSize:14,color:C.gold}}>⚡ {w.tip}</div>
                         </div>
                       )}
                     </div>
@@ -792,8 +1111,8 @@ export default function Destiny2Guide() {
                   <div key={i} style={{background:C.panel,border:`1px solid ${C.border}`,borderLeft:`3px solid ${a.color}`,padding:"11px 14px",display:"flex",gap:10,alignItems:"flex-start"}}>
                     <span style={{fontSize:15,flexShrink:0}}>{a.symbol}</span>
                     <div>
-                      <div style={{fontSize:13,color:C.textBright,fontWeight:700,marginBottom:3}}>{a.name} Ammo</div>
-                      <div style={{fontSize:12,color:C.textDim,lineHeight:1.6}}>{a.desc}</div>
+                      <div style={{fontSize:15,color:C.textBright,fontWeight:700,marginBottom:3}}>{a.name} Ammo</div>
+                      <div style={{fontSize:14,color:C.textDim,lineHeight:1.6}}>{a.desc}</div>
                     </div>
                   </div>
                 ))}
@@ -810,8 +1129,8 @@ export default function Destiny2Guide() {
               <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(260px,1fr))",gap:7}}>
                 {DAMAGE_TYPES.filter(d=>!search||f(d.type)||f(d.desc)).map((d,i)=>(
                   <div key={i} style={{background:C.panel,border:`1px solid ${d.color}44`,borderTop:`2px solid ${d.color}`,padding:"10px 12px"}}>
-                    <div style={{fontSize:12,color:d.color,fontWeight:700,letterSpacing:2,marginBottom:5}}>{d.type.toUpperCase()}</div>
-                    <div style={{fontSize:12,color:C.textDim,lineHeight:1.6}}>{d.desc}</div>
+                    <div style={{fontSize:14,color:d.color,fontWeight:700,letterSpacing:2,marginBottom:5}}>{d.type.toUpperCase()}</div>
+                    <div style={{fontSize:14,color:C.textDim,lineHeight:1.6}}>{d.desc}</div>
                   </div>
                 ))}
               </div>
@@ -827,8 +1146,8 @@ export default function Destiny2Guide() {
               <div style={{display:"flex",flexDirection:"column",gap:7}}>
                 {POWER_BASICS.filter(p=>!search||f(p.title)||f(p.body)).map((p,i)=>(
                   <div key={i} style={{background:C.panel,border:`1px solid ${C.border}`,borderLeft:`3px solid ${C.gold}`,padding:"11px 14px"}}>
-                    <div style={{fontSize:13,color:C.textBright,fontWeight:700,marginBottom:5}}>{p.title}</div>
-                    <div style={{fontSize:12,color:C.textDim,lineHeight:1.7}}>{p.body}</div>
+                    <div style={{fontSize:15,color:C.textBright,fontWeight:700,marginBottom:5}}>{p.title}</div>
+                    <div style={{fontSize:14,color:C.textDim,lineHeight:1.7}}>{p.body}</div>
                   </div>
                 ))}
               </div>
@@ -839,7 +1158,7 @@ export default function Destiny2Guide() {
         {/* ── CLASSES ── */}
         {tab==="CLASSES" && (
           <>
-            <div style={{fontSize:12,color:C.textDim,letterSpacing:2,marginBottom:14}}>
+            <div style={{fontSize:14,color:C.textDim,letterSpacing:2,marginBottom:14}}>
               3 CLASSES · 6 SUBCLASSES EACH · YOU CAN HAVE ONE OF EACH CLASS — RUN ALL 3 FOR MAX REWARDS
             </div>
             {CLASSES.filter(c=>!search||f(c.name)||f(c.role)||f(c.playstyle)).map((cls,ci)=>{
@@ -853,10 +1172,10 @@ export default function Destiny2Guide() {
                     onMouseLeave={e=>e.currentTarget.style.background=open?`${cls.color}08`:"transparent"}>
                     <div style={{flex:1}}>
                       <div style={{display:"flex",alignItems:"center",gap:10,marginBottom:5,flexWrap:"wrap"}}>
-                        <span style={{fontSize:18,color:cls.color,fontWeight:900,letterSpacing:2}}>{cls.name.toUpperCase()}</span>
-                        <span style={{fontSize:10,color:cls.color,background:`${cls.color}15`,border:`1px solid ${cls.color}44`,padding:"2px 8px",letterSpacing:2}}>{cls.role}</span>
+                        <span style={{fontSize:20,color:cls.color,fontWeight:900,letterSpacing:2}}>{cls.name.toUpperCase()}</span>
+                        <span style={{fontSize:14,color:cls.color,background:`${cls.color}15`,border:`1px solid ${cls.color}44`,padding:"2px 8px",letterSpacing:2}}>{cls.role}</span>
                       </div>
-                      <div style={{fontSize:12,color:C.textDim}}>{cls.playstyle}</div>
+                      <div style={{fontSize:14,color:C.textDim}}>{cls.playstyle}</div>
                     </div>
                     <span style={{color:cls.color,fontSize:14,flexShrink:0,marginTop:2}}>{open?"▲":"▼"}</span>
                   </div>
@@ -866,24 +1185,24 @@ export default function Destiny2Guide() {
                       {/* Class info */}
                       <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8,marginBottom:14}}>
                         <div style={{background:`${cls.color}08`,padding:"8px 10px",borderLeft:`2px solid ${cls.color}44`}}>
-                          <div style={{fontSize:10,letterSpacing:2,color:cls.color,marginBottom:3}}>CLASS ABILITY</div>
-                          <div style={{fontSize:12,color:C.text,lineHeight:1.6}}>{cls.ability}</div>
+                          <div style={{fontSize:12,letterSpacing:2,color:cls.color,marginBottom:3}}>CLASS ABILITY</div>
+                          <div style={{fontSize:14,color:C.text,lineHeight:1.6}}>{cls.ability}</div>
                         </div>
                         <div style={{background:`${cls.color}08`,padding:"8px 10px",borderLeft:`2px solid ${cls.color}44`}}>
-                          <div style={{fontSize:10,letterSpacing:2,color:cls.color,marginBottom:3}}>JUMP</div>
-                          <div style={{fontSize:12,color:C.text,lineHeight:1.6}}>{cls.jump}</div>
+                          <div style={{fontSize:12,letterSpacing:2,color:cls.color,marginBottom:3}}>JUMP</div>
+                          <div style={{fontSize:14,color:C.text,lineHeight:1.6}}>{cls.jump}</div>
                         </div>
                         <div style={{background:`${C.green}08`,padding:"8px 10px",borderLeft:`2px solid ${C.green}44`}}>
-                          <div style={{fontSize:10,letterSpacing:2,color:C.green,marginBottom:3}}>PvE STRENGTHS</div>
-                          <div style={{fontSize:12,color:C.text,lineHeight:1.6}}>{cls.pve}</div>
+                          <div style={{fontSize:12,letterSpacing:2,color:C.green,marginBottom:3}}>PvE STRENGTHS</div>
+                          <div style={{fontSize:14,color:C.text,lineHeight:1.6}}>{cls.pve}</div>
                         </div>
                         <div style={{background:`${C.red}08`,padding:"8px 10px",borderLeft:`2px solid ${C.red}44`}}>
-                          <div style={{fontSize:10,letterSpacing:2,color:C.red,marginBottom:3}}>PvP STRENGTHS</div>
-                          <div style={{fontSize:12,color:C.text,lineHeight:1.6}}>{cls.pvp}</div>
+                          <div style={{fontSize:12,letterSpacing:2,color:C.red,marginBottom:3}}>PvP STRENGTHS</div>
+                          <div style={{fontSize:14,color:C.text,lineHeight:1.6}}>{cls.pvp}</div>
                         </div>
                       </div>
                       {cls.avoid && (
-                        <div style={{background:`${C.orange}08`,padding:"8px 10px",borderLeft:`2px solid ${C.orange}44`,marginBottom:14,fontSize:12,color:C.textDim}}>
+                        <div style={{background:`${C.orange}08`,padding:"8px 10px",borderLeft:`2px solid ${C.orange}44`,marginBottom:14,fontSize:14,color:C.textDim}}>
                           <span style={{color:C.orange,fontWeight:700}}>⚠ Heads up: </span>{cls.avoid}
                         </div>
                       )}
@@ -901,19 +1220,19 @@ export default function Destiny2Guide() {
                                 onMouseEnter={e=>e.currentTarget.style.background=`${sub.color}08`}
                                 onMouseLeave={e=>e.currentTarget.style.background=sopen?`${sub.color}05`:"#0d0f1a"}>
                                 <div style={{display:"flex",alignItems:"center",gap:8,flexWrap:"wrap"}}>
-                                  <span style={{fontSize:13,color:sub.color,fontWeight:700}}>{sub.name}</span>
-                                  <span style={{fontSize:10,color:sub.color,background:`${sub.color}15`,border:`1px solid ${sub.color}33`,padding:"1px 6px",letterSpacing:1}}>{sub.element.toUpperCase()}</span>
+                                  <span style={{fontSize:15,color:sub.color,fontWeight:700}}>{sub.name}</span>
+                                  <span style={{fontSize:14,color:sub.color,background:`${sub.color}15`,border:`1px solid ${sub.color}33`,padding:"1px 6px",letterSpacing:1}}>{sub.element.toUpperCase()}</span>
                                 </div>
                                 <span style={{color:sub.color,fontSize:13,flexShrink:0}}>{sopen?"▲":"▼"}</span>
                               </div>
                               {sopen && (
                                 <div style={{padding:"10px 12px"}}>
                                   <div style={{marginBottom:8}}>
-                                    <div style={{fontSize:10,letterSpacing:2,color:sub.color,marginBottom:3}}>SUPER</div>
-                                    <div style={{fontSize:12,color:C.text,lineHeight:1.6}}>{sub.super}</div>
+                                    <div style={{fontSize:12,letterSpacing:2,color:sub.color,marginBottom:3}}>SUPER</div>
+                                    <div style={{fontSize:14,color:C.text,lineHeight:1.6}}>{sub.super}</div>
                                   </div>
-                                  <div style={{marginBottom:8,fontSize:12,color:C.textDim,lineHeight:1.7}}>{sub.playstyle}</div>
-                                  <div style={{background:`${sub.color}08`,padding:"7px 10px",borderLeft:`2px solid ${sub.color}44`,fontSize:12,color:sub.color}}>
+                                  <div style={{marginBottom:8,fontSize:14,color:C.textDim,lineHeight:1.7}}>{sub.playstyle}</div>
+                                  <div style={{background:`${sub.color}08`,padding:"7px 10px",borderLeft:`2px solid ${sub.color}44`,fontSize:14,color:sub.color}}>
                                     🔑 {sub.key}
                                   </div>
                                 </div>
@@ -933,7 +1252,7 @@ export default function Destiny2Guide() {
         {/* ── EXPANSIONS ── */}
         {tab==="EXPANSIONS" && (
           <>
-            <div style={{fontSize:12,color:C.textDim,letterSpacing:2,marginBottom:14}}>
+            <div style={{fontSize:14,color:C.textDim,letterSpacing:2,marginBottom:14}}>
               10 EXPANSIONS TOTAL · GAME IS IN FINAL STATE (MONUMENT OF TRIUMPH, JUNE 2026) · ALL CONTENT PLAYABLE FOREVER
             </div>
             <div style={{display:"flex",flexDirection:"column",gap:8}}>
@@ -947,22 +1266,22 @@ export default function Destiny2Guide() {
                       onMouseLeave={e=>e.currentTarget.style.background=open?`${exp.color}08`:"transparent"}>
                       <div style={{flex:1}}>
                         <div style={{display:"flex",alignItems:"center",gap:8,flexWrap:"wrap",marginBottom:3}}>
-                          <span style={{fontSize:14,color:C.textBright,fontWeight:700}}>{exp.name}</span>
-                          <span style={{fontSize:10,color:exp.color,background:`${exp.color}15`,border:`1px solid ${exp.color}44`,padding:"2px 6px"}}>{exp.year}</span>
-                          <span style={{fontSize:10,color:C.textDim,letterSpacing:1}}>{exp.status}</span>
+                          <span style={{fontSize:16,color:C.textBright,fontWeight:700}}>{exp.name}</span>
+                          <span style={{fontSize:14,color:exp.color,background:`${exp.color}15`,border:`1px solid ${exp.color}44`,padding:"2px 6px"}}>{exp.year}</span>
+                          <span style={{fontSize:14,color:C.textDim,letterSpacing:1}}>{exp.status}</span>
                         </div>
-                        <div style={{fontSize:11,color:C.textDim}}>{exp.note}</div>
+                        <div style={{fontSize:15,color:C.textDim}}>{exp.note}</div>
                       </div>
                       <span style={{color:exp.color,fontSize:14,flexShrink:0,marginTop:2}}>{open?"▲":"▼"}</span>
                     </div>
                     {open && (
                       <div style={{padding:"12px 14px"}}>
                         <div style={{marginBottom:8,background:`${exp.color}08`,padding:"8px 10px",borderLeft:`2px solid ${exp.color}44`}}>
-                          <div style={{fontSize:10,letterSpacing:2,color:exp.color,marginBottom:3}}>WHAT IT ADDS</div>
-                          <div style={{fontSize:12,color:C.text,lineHeight:1.7}}>{exp.adds}</div>
+                          <div style={{fontSize:12,letterSpacing:2,color:exp.color,marginBottom:3}}>WHAT IT ADDS</div>
+                          <div style={{fontSize:14,color:C.text,lineHeight:1.7}}>{exp.adds}</div>
                         </div>
                         {exp.unlocks && (
-                          <div style={{background:`${C.gold}08`,padding:"8px 10px",borderLeft:`2px solid ${C.gold}44`,fontSize:12,color:C.gold,lineHeight:1.6}}>
+                          <div style={{background:`${C.gold}08`,padding:"8px 10px",borderLeft:`2px solid ${C.gold}44`,fontSize:14,color:C.gold,lineHeight:1.6}}>
                             🔑 UNLOCKS: {exp.unlocks}
                           </div>
                         )}
@@ -978,7 +1297,7 @@ export default function Destiny2Guide() {
         {/* ── ACTIVITIES ── */}
         {tab==="ACTIVITIES" && (
           <>
-            <div style={{fontSize:12,color:C.textDim,letterSpacing:2,marginBottom:14}}>
+            <div style={{fontSize:14,color:C.textDim,letterSpacing:2,marginBottom:14}}>
               ALL MAJOR ACTIVITIES · RECOMMENDED POWER · WHAT EACH REWARDS
             </div>
             <div style={{display:"flex",flexDirection:"column",gap:8}}>
@@ -992,25 +1311,25 @@ export default function Destiny2Guide() {
                       onMouseLeave={e=>e.currentTarget.style.background=open?`${act.color}08`:"transparent"}>
                       <div style={{flex:1}}>
                         <div style={{display:"flex",alignItems:"center",gap:8,flexWrap:"wrap",marginBottom:4}}>
-                          <span style={{fontSize:14,color:C.textBright,fontWeight:700}}>{act.name}</span>
-                          <span style={{fontSize:10,color:act.color,background:`${act.color}15`,border:`1px solid ${act.color}44`,padding:"2px 6px",letterSpacing:1}}>{act.tier}</span>
-                          <span style={{fontSize:10,color:C.textDim,letterSpacing:1}}>{act.players}</span>
+                          <span style={{fontSize:16,color:C.textBright,fontWeight:700}}>{act.name}</span>
+                          <span style={{fontSize:14,color:act.color,background:`${act.color}15`,border:`1px solid ${act.color}44`,padding:"2px 6px",letterSpacing:1}}>{act.tier}</span>
+                          <span style={{fontSize:14,color:C.textDim,letterSpacing:1}}>{act.players}</span>
                         </div>
-                        <div style={{fontSize:11,color:C.textDim}}>Power: {act.power}</div>
+                        <div style={{fontSize:15,color:C.textDim}}>Power: {act.power}</div>
                       </div>
                       <span style={{color:act.color,fontSize:14,flexShrink:0,marginTop:2}}>{open?"▲":"▼"}</span>
                     </div>
                     {open && (
                       <div style={{padding:"12px 14px"}}>
-                        <div style={{fontSize:13,color:C.text,lineHeight:1.8,marginBottom:10}}>{act.desc}</div>
+                        <div style={{fontSize:15,color:C.text,lineHeight:1.8,marginBottom:10}}>{act.desc}</div>
                         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8}}>
                           <div style={{background:`${C.gold}08`,padding:"8px 10px",borderLeft:`2px solid ${C.gold}44`}}>
-                            <div style={{fontSize:10,letterSpacing:2,color:C.gold,marginBottom:3}}>REWARDS</div>
-                            <div style={{fontSize:12,color:C.textDim,lineHeight:1.6}}>{act.rewards}</div>
+                            <div style={{fontSize:12,letterSpacing:2,color:C.gold,marginBottom:3}}>REWARDS</div>
+                            <div style={{fontSize:14,color:C.textDim,lineHeight:1.6}}>{act.rewards}</div>
                           </div>
                           <div style={{background:`${act.color}08`,padding:"8px 10px",borderLeft:`2px solid ${act.color}44`}}>
-                            <div style={{fontSize:10,letterSpacing:2,color:act.color,marginBottom:3}}>⚡ TIP</div>
-                            <div style={{fontSize:12,color:C.textDim,lineHeight:1.6}}>{act.tip}</div>
+                            <div style={{fontSize:12,letterSpacing:2,color:act.color,marginBottom:3}}>⚡ TIP</div>
+                            <div style={{fontSize:14,color:C.textDim,lineHeight:1.6}}>{act.tip}</div>
                           </div>
                         </div>
                       </div>
@@ -1025,7 +1344,7 @@ export default function Destiny2Guide() {
         {/* ── FARMING ── */}
         {tab==="FARMING" && (
           <>
-            <div style={{fontSize:12,color:C.textDim,letterSpacing:2,marginBottom:14}}>
+            <div style={{fontSize:14,color:C.textDim,letterSpacing:2,marginBottom:14}}>
               HOW TO GRIND EFFICIENTLY · POWER PROGRESSION · EXOTIC FARMING · WEEKLY LOCKOUTS
             </div>
             <div style={{display:"flex",flexDirection:"column",gap:8}}>
@@ -1039,14 +1358,14 @@ export default function Destiny2Guide() {
                       onMouseLeave={e=>e.currentTarget.style.background=open?`${item.color}08`:"transparent"}>
                       <div style={{display:"flex",alignItems:"center",gap:10}}>
                         <span style={{fontSize:18}}>{item.icon}</span>
-                        <span style={{fontSize:14,color:C.textBright,fontWeight:700}}>{item.topic}</span>
+                        <span style={{fontSize:16,color:C.textBright,fontWeight:700}}>{item.topic}</span>
                       </div>
                       <span style={{color:item.color,fontSize:14,flexShrink:0}}>{open?"▲":"▼"}</span>
                     </div>
                     {open && (
                       <div style={{padding:"12px 14px"}}>
-                        <div style={{fontSize:13,color:C.text,lineHeight:1.8,whiteSpace:"pre-line",marginBottom:10}}>{item.body}</div>
-                        <div style={{background:`${item.color}08`,padding:"8px 12px",borderLeft:`2px solid ${item.color}55`,fontSize:12,color:item.color,lineHeight:1.6}}>⚡ {item.tip}</div>
+                        <div style={{fontSize:15,color:C.text,lineHeight:1.8,whiteSpace:"pre-line",marginBottom:10}}>{item.body}</div>
+                        <div style={{background:`${item.color}08`,padding:"8px 12px",borderLeft:`2px solid ${item.color}55`,fontSize:14,color:item.color,lineHeight:1.6}}>⚡ {item.tip}</div>
                       </div>
                     )}
                   </div>
@@ -1059,40 +1378,102 @@ export default function Destiny2Guide() {
         {/* ── QUESTS ── */}
         {tab==="QUESTS" && (
           <>
-            <div style={{fontSize:12,color:C.textDim,letterSpacing:2,marginBottom:14}}>
-              WHERE TO FIND QUESTS · HOW TO TRACK ITEMS · EXOTIC QUEST SOURCES
+            <div style={{fontSize:15,color:C.textDim,letterSpacing:2,marginBottom:14}}>
+              {QUESTS.length} QUESTS · TAP ANY QUEST FOR FULL WALKTHROUGH · STEP BY STEP
             </div>
-            <div style={{display:"flex",flexDirection:"column",gap:8}}>
-              {QUEST_GUIDES.filter(q=>!search||f(q.name)||f(q.how)||f(q.find)).map((q,i)=>{
-                const open=expanded===`q-${i}`;
-                return (
-                  <div key={i} style={{border:`1px solid ${open?q.color+"55":C.border}`,background:C.panel}}>
-                    <div onClick={()=>setExpanded(open?null:`q-${i}`)}
-                      style={{padding:"12px 14px",cursor:"pointer",display:"flex",justifyContent:"space-between",alignItems:"center",gap:8,background:open?`${q.color}08`:"transparent",borderBottom:open?`1px solid ${C.border}`:"none"}}
-                      onMouseEnter={e=>e.currentTarget.style.background=`${q.color}0a`}
-                      onMouseLeave={e=>e.currentTarget.style.background=open?`${q.color}08`:"transparent"}>
-                      <div style={{display:"flex",alignItems:"center",gap:10}}>
-                        <span style={{fontSize:18}}>{q.icon}</span>
-                        <span style={{fontSize:14,color:C.textBright,fontWeight:700}}>{q.name}</span>
-                      </div>
-                      <span style={{color:q.color,fontSize:14,flexShrink:0}}>{open?"▲":"▼"}</span>
-                    </div>
-                    {open && (
-                      <div style={{padding:"12px 14px"}}>
-                        <div style={{marginBottom:8}}>
-                          <div style={{fontSize:10,letterSpacing:2,color:q.color,marginBottom:4}}>HOW IT WORKS</div>
-                          <div style={{fontSize:13,color:C.text,lineHeight:1.8,whiteSpace:"pre-line"}}>{q.how}</div>
-                        </div>
-                        <div style={{marginBottom:8,background:`${C.cyan}08`,padding:"8px 10px",borderLeft:`2px solid ${C.cyan}44`}}>
-                          <div style={{fontSize:10,letterSpacing:2,color:C.cyan,marginBottom:3}}>📍 WHERE TO FIND</div>
-                          <div style={{fontSize:12,color:C.text,lineHeight:1.6}}>{q.find}</div>
-                        </div>
-                        <div style={{background:`${q.color}08`,padding:"8px 10px",borderLeft:`2px solid ${q.color}44`,fontSize:12,color:q.color,lineHeight:1.6}}>⚡ {q.tip}</div>
-                      </div>
-                    )}
-                  </div>
+
+            {/* Category filter */}
+            <div style={{display:"grid",gridTemplateColumns:"repeat(5,1fr)",gap:4,marginBottom:14}}>
+              {QUEST_CATS.map(cat=>{
+                const col=QUEST_CAT_COLORS[cat];
+                const active=questCat===cat;
+                return(
+                  <button key={cat} onClick={()=>{setQuestCat(cat);setExpanded(null);}} style={{
+                    padding:"9px 4px",
+                    background:active?`${col}15`:C.panel,
+                    border:active?`1px solid ${col}`:`1px solid ${C.border}`,
+                    borderTop:active?`2px solid ${col}`:"2px solid transparent",
+                    color:active?col:C.dim,
+                    cursor:"pointer",fontSize:12,letterSpacing:2,...F,
+                    fontWeight:active?700:400,
+                  }}>{QUEST_CAT_LABELS[cat]}</button>
                 );
               })}
+            </div>
+
+            {/* Quest cards */}
+            <div style={{display:"flex",flexDirection:"column",gap:8}}>
+              {QUESTS
+                .filter(q=>questCat==="all"||q.cat===questCat)
+                .filter(q=>!search||f(q.name)||f(q.reward)||(q.steps&&q.steps.join(" ").toLowerCase().includes(search.toLowerCase())))
+                .map((q,i)=>{
+                  const open=expanded===`q-${i}`;
+                  const catLabel={exotic:"EXOTIC MISSION",campaign:"CAMPAIGN",key:"KEY QUEST",weekly:"WEEKLY"}[q.cat];
+                  const catCol=QUEST_CAT_COLORS[q.cat];
+                  return(
+                    <div key={i} style={{border:`1px solid ${open?q.color+"66":C.border}`,background:C.panel}}>
+                      {/* Header */}
+                      <div onClick={()=>setExpanded(open?null:`q-${i}`)}
+                        style={{padding:"14px 16px",cursor:"pointer",display:"flex",justifyContent:"space-between",alignItems:"flex-start",gap:10,background:open?`${q.color}08`:"transparent",borderBottom:open?`1px solid ${C.border}`:"none"}}
+                        onMouseEnter={e=>e.currentTarget.style.background=`${q.color}0a`}
+                        onMouseLeave={e=>e.currentTarget.style.background=open?`${q.color}08`:"transparent"}>
+                        <div style={{flex:1}}>
+                          <div style={{display:"flex",alignItems:"center",gap:8,flexWrap:"wrap",marginBottom:5}}>
+                            <span style={{fontSize:14,color:catCol,background:`${catCol}15`,border:`1px solid ${catCol}44`,padding:"2px 8px",letterSpacing:2}}>{catLabel}</span>
+                            <span style={{fontSize:14,color:C.textDim,letterSpacing:1}}>{q.expansion}</span>
+                          </div>
+                          <div style={{fontSize:16,color:C.textBright,fontWeight:900,marginBottom:5}}>{q.name}</div>
+                          <div style={{fontSize:15,color:C.gold}}>
+                            🏆 {q.reward}
+                          </div>
+                        </div>
+                        <div style={{display:"flex",flexDirection:"column",alignItems:"flex-end",gap:4,flexShrink:0}}>
+                          <span style={{color:q.color,fontSize:16}}>{open?"▲":"▼"}</span>
+                        </div>
+                      </div>
+
+                      {/* Expanded content */}
+                      {open&&(
+                        <div style={{padding:"14px 16px"}}>
+                          {/* Meta row */}
+                          <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(160px,1fr))",gap:8,marginBottom:14}}>
+                            <div style={{background:`${q.color}08`,padding:"8px 10px",borderLeft:`2px solid ${q.color}44`}}>
+                              <div style={{fontSize:12,letterSpacing:2,color:q.color,marginBottom:3}}>📍 HOW TO START</div>
+                              <div style={{fontSize:14,color:C.text,lineHeight:1.6}}>{q.source}</div>
+                            </div>
+                            <div style={{background:`${C.orange}08`,padding:"8px 10px",borderLeft:`2px solid ${C.orange}44`}}>
+                              <div style={{fontSize:12,letterSpacing:2,color:C.orange,marginBottom:3}}>⚡ POWER / PLAYERS</div>
+                              <div style={{fontSize:14,color:C.text,lineHeight:1.6}}>{q.power}<br/>{q.players}</div>
+                            </div>
+                          </div>
+
+                          {/* Steps */}
+                          <div style={{marginBottom:14}}>
+                            <div style={{fontSize:11,letterSpacing:3,color:C.green,marginBottom:10}}>📋 STEP BY STEP WALKTHROUGH</div>
+                            <div style={{display:"flex",flexDirection:"column",gap:8}}>
+                              {q.steps.map((step,si)=>(
+                                <div key={si} style={{display:"flex",gap:12,alignItems:"flex-start",background:`${C.green}05`,padding:"10px 12px",borderLeft:`2px solid ${C.green}33`}}>
+                                  <span style={{
+                                    fontSize:11,fontWeight:900,color:C.green,
+                                    background:`${C.green}20`,
+                                    width:24,height:24,display:"flex",alignItems:"center",justifyContent:"center",
+                                    flexShrink:0,
+                                  }}>{si+1}</span>
+                                  <span style={{fontSize:15,color:C.text,lineHeight:1.8}}>{step}</span>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+
+                          {/* Tip */}
+                          <div style={{background:`${C.gold}08`,padding:"10px 14px",borderLeft:`3px solid ${C.gold}66`,fontSize:15,color:C.gold,lineHeight:1.7}}>
+                            ⚡ {q.tip}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
             </div>
           </>
         )}
@@ -1100,7 +1481,7 @@ export default function Destiny2Guide() {
         {/* ── ORNAMENTS ── */}
         {tab==="ORNAMENTS" && (
           <>
-            <div style={{fontSize:12,color:C.textDim,letterSpacing:2,marginBottom:14}}>
+            <div style={{fontSize:15,color:C.textDim,letterSpacing:2,marginBottom:14}}>
               HOW TO EARN COSMETICS · BRIGHT DUST FARMING · TRANSMOG · RAID EXCLUSIVES
             </div>
             <div style={{display:"flex",flexDirection:"column",gap:8}}>
@@ -1114,25 +1495,25 @@ export default function Destiny2Guide() {
                       onMouseLeave={e=>e.currentTarget.style.background=open?`${o.color}08`:"transparent"}>
                       <div style={{display:"flex",alignItems:"center",gap:10}}>
                         <span style={{fontSize:18}}>{o.icon}</span>
-                        <span style={{fontSize:14,color:C.textBright,fontWeight:700}}>{o.name}</span>
+                        <span style={{fontSize:16,color:C.textBright,fontWeight:700}}>{o.name}</span>
                       </div>
                       <span style={{color:o.color,fontSize:14,flexShrink:0}}>{open?"▲":"▼"}</span>
                     </div>
                     {open && (
                       <div style={{padding:"12px 14px"}}>
-                        <div style={{fontSize:13,color:C.text,lineHeight:1.8,marginBottom:10}}>{o.how}</div>
+                        <div style={{fontSize:15,color:C.text,lineHeight:1.8,marginBottom:10}}>{o.how}</div>
                         <div style={{marginBottom:10}}>
-                          <div style={{fontSize:10,letterSpacing:2,color:o.color,marginBottom:6}}>SOURCES</div>
+                          <div style={{fontSize:12,letterSpacing:2,color:o.color,marginBottom:6}}>SOURCES</div>
                           <div style={{display:"flex",flexDirection:"column",gap:5}}>
                             {o.sources.map((s2,si)=>(
-                              <div key={si} style={{display:"flex",gap:8,fontSize:12,color:C.textDim,lineHeight:1.6}}>
+                              <div key={si} style={{display:"flex",gap:8,fontSize:14,color:C.textDim,lineHeight:1.6}}>
                                 <span style={{color:o.color,flexShrink:0,marginTop:2}}>▸</span>
                                 <span>{s2}</span>
                               </div>
                             ))}
                           </div>
                         </div>
-                        <div style={{background:`${o.color}08`,padding:"8px 12px",borderLeft:`2px solid ${o.color}55`,fontSize:12,color:o.color,lineHeight:1.6}}>⚡ {o.tip}</div>
+                        <div style={{background:`${o.color}08`,padding:"8px 12px",borderLeft:`2px solid ${o.color}55`,fontSize:14,color:o.color,lineHeight:1.6}}>⚡ {o.tip}</div>
                       </div>
                     )}
                   </div>
@@ -1145,7 +1526,7 @@ export default function Destiny2Guide() {
         {/* ── BOUNTIES ── */}
         {tab==="BOUNTIES" && (
           <>
-            <div style={{fontSize:12,color:C.textDim,letterSpacing:2,marginBottom:14}}>
+            <div style={{fontSize:14,color:C.textDim,letterSpacing:2,marginBottom:14}}>
               PATHFINDER + ORDERS SYSTEM · RESETS EVERY TUESDAY · STACK WITH FARMING
             </div>
             <div style={{display:"flex",flexDirection:"column",gap:8}}>
@@ -1159,18 +1540,18 @@ export default function Destiny2Guide() {
                       onMouseLeave={e=>e.currentTarget.style.background=open?`${b.color}08`:"transparent"}>
                       <div style={{display:"flex",alignItems:"center",gap:10}}>
                         <span style={{fontSize:18}}>{b.icon}</span>
-                        <span style={{fontSize:14,color:C.textBright,fontWeight:700}}>{b.name}</span>
+                        <span style={{fontSize:16,color:C.textBright,fontWeight:700}}>{b.name}</span>
                       </div>
                       <span style={{color:b.color,fontSize:14,flexShrink:0}}>{open?"▲":"▼"}</span>
                     </div>
                     {open && (
                       <div style={{padding:"12px 14px"}}>
-                        <div style={{fontSize:13,color:C.text,lineHeight:1.8,marginBottom:10}}>{b.how}</div>
+                        <div style={{fontSize:15,color:C.text,lineHeight:1.8,marginBottom:10}}>{b.how}</div>
                         <div style={{marginBottom:10,background:`${C.green}08`,padding:"8px 10px",borderLeft:`2px solid ${C.green}44`}}>
-                          <div style={{fontSize:10,letterSpacing:2,color:C.green,marginBottom:4}}>HOW TO COMPLETE</div>
-                          <div style={{fontSize:12,color:C.text,lineHeight:1.7}}>{b.complete}</div>
+                          <div style={{fontSize:12,letterSpacing:2,color:C.green,marginBottom:4}}>HOW TO COMPLETE</div>
+                          <div style={{fontSize:14,color:C.text,lineHeight:1.7}}>{b.complete}</div>
                         </div>
-                        <div style={{background:`${b.color}08`,padding:"8px 12px",borderLeft:`2px solid ${b.color}55`,fontSize:12,color:b.color,lineHeight:1.6}}>⚡ {b.tip}</div>
+                        <div style={{background:`${b.color}08`,padding:"8px 12px",borderLeft:`2px solid ${b.color}55`,fontSize:14,color:b.color,lineHeight:1.6}}>⚡ {b.tip}</div>
                       </div>
                     )}
                   </div>
@@ -1183,7 +1564,7 @@ export default function Destiny2Guide() {
         {/* ── WEAPON UPGRADES ── */}
         {tab==="WEAPON UPGRADES" && (
           <>
-            <div style={{fontSize:12,color:C.textDim,letterSpacing:2,marginBottom:14}}>
+            <div style={{fontSize:14,color:C.textDim,letterSpacing:2,marginBottom:14}}>
               MASTERWORKING · CATALYSTS · INFUSION · ENHANCED PERKS · WEAPON COSMETICS
             </div>
             {WEAPON_UPGRADES.filter(w=>!search||f(w.name)||f(w.how)).map((w,i)=>{
@@ -1196,25 +1577,25 @@ export default function Destiny2Guide() {
                     onMouseLeave={e=>e.currentTarget.style.background=open?`${w.color}08`:"transparent"}>
                     <div style={{display:"flex",alignItems:"center",gap:10}}>
                       <span style={{fontSize:18}}>{w.icon}</span>
-                      <span style={{fontSize:14,color:C.textBright,fontWeight:700}}>{w.name}</span>
+                      <span style={{fontSize:16,color:C.textBright,fontWeight:700}}>{w.name}</span>
                     </div>
                     <span style={{color:w.color,fontSize:14,flexShrink:0}}>{open?"▲":"▼"}</span>
                   </div>
                   {open&&(
                     <div style={{padding:"12px 14px"}}>
-                      <div style={{fontSize:13,color:C.text,lineHeight:1.8,whiteSpace:"pre-line",marginBottom:10}}>{w.how}</div>
+                      <div style={{fontSize:15,color:C.text,lineHeight:1.8,whiteSpace:"pre-line",marginBottom:10}}>{w.how}</div>
                       {w.steps&&(
                         <div style={{marginBottom:10,background:`${C.green}06`,padding:"8px 10px",borderLeft:`2px solid ${C.green}33`}}>
-                          <div style={{fontSize:10,letterSpacing:2,color:C.green,marginBottom:5}}>STEPS</div>
+                          <div style={{fontSize:12,letterSpacing:2,color:C.green,marginBottom:5}}>STEPS</div>
                           {w.steps.map((s2,si)=>(
                             <div key={si} style={{display:"flex",gap:8,marginBottom:si<w.steps.length-1?5:0}}>
                               <span style={{color:C.green,fontWeight:700,flexShrink:0,fontSize:11}}>{si+1}.</span>
-                              <span style={{fontSize:12,color:C.text,lineHeight:1.6}}>{s2}</span>
+                              <span style={{fontSize:14,color:C.text,lineHeight:1.6}}>{s2}</span>
                             </div>
                           ))}
                         </div>
                       )}
-                      <div style={{background:`${w.color}08`,padding:"8px 12px",borderLeft:`2px solid ${w.color}55`,fontSize:12,color:w.color,lineHeight:1.6}}>⚡ {w.tip}</div>
+                      <div style={{background:`${w.color}08`,padding:"8px 12px",borderLeft:`2px solid ${w.color}55`,fontSize:14,color:w.color,lineHeight:1.6}}>⚡ {w.tip}</div>
                     </div>
                   )}
                 </div>
@@ -1226,7 +1607,7 @@ export default function Destiny2Guide() {
         {/* ── ARMOR & STATS ── */}
         {tab==="ARMOR & STATS" && (
           <>
-            <div style={{fontSize:12,color:C.textDim,letterSpacing:2,marginBottom:14}}>
+            <div style={{fontSize:14,color:C.textDim,letterSpacing:2,marginBottom:14}}>
               6 STATS · TARGET 100 RESILIENCE ALWAYS · EACH 10 POINTS = ONE TIER
             </div>
             {/* Stat cards */}
@@ -1242,23 +1623,23 @@ export default function Destiny2Guide() {
                       <div style={{display:"flex",alignItems:"center",gap:8}}>
                         <span style={{fontSize:16}}>{s.icon}</span>
                         <div>
-                          <div style={{fontSize:13,color:s.color,fontWeight:700,letterSpacing:2}}>{s.stat.toUpperCase()}</div>
-                          <div style={{fontSize:11,color:C.textDim}}>{s.affects}</div>
+                          <div style={{fontSize:15,color:s.color,fontWeight:700,letterSpacing:2}}>{s.stat.toUpperCase()}</div>
+                          <div style={{fontSize:15,color:C.textDim}}>{s.affects}</div>
                         </div>
                       </div>
                       <span style={{color:s.color,fontSize:13,flexShrink:0}}>{open?"▲":"▼"}</span>
                     </div>
                     {open&&(
                       <div style={{padding:"10px 14px"}}>
-                        <div style={{fontSize:12,color:C.textDim,lineHeight:1.7,marginBottom:8}}>{s.tiers}</div>
+                        <div style={{fontSize:14,color:C.textDim,lineHeight:1.7,marginBottom:8}}>{s.tiers}</div>
                         <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:6}}>
                           <div style={{background:`${C.green}08`,padding:"7px 9px",borderLeft:`2px solid ${C.green}44`}}>
                             <div style={{fontSize:9,letterSpacing:2,color:C.green,marginBottom:3}}>PvE</div>
-                            <div style={{fontSize:11,color:C.textDim,lineHeight:1.5}}>{s.pve}</div>
+                            <div style={{fontSize:15,color:C.textDim,lineHeight:1.5}}>{s.pve}</div>
                           </div>
                           <div style={{background:`${C.red}08`,padding:"7px 9px",borderLeft:`2px solid ${C.red}44`}}>
                             <div style={{fontSize:9,letterSpacing:2,color:C.red,marginBottom:3}}>PvP</div>
-                            <div style={{fontSize:11,color:C.textDim,lineHeight:1.5}}>{s.pvp}</div>
+                            <div style={{fontSize:15,color:C.textDim,lineHeight:1.5}}>{s.pvp}</div>
                           </div>
                         </div>
                       </div>
@@ -1270,8 +1651,8 @@ export default function Destiny2Guide() {
             {/* Armor system info */}
             {ARMOR_SYSTEM.filter(a=>!search||f(a.name)||f(a.body)).map((a,i)=>(
               <div key={i} style={{background:C.panel,border:`1px solid ${C.border}`,borderLeft:`3px solid ${a.color}`,padding:"14px 16px",marginBottom:8}}>
-                <div style={{fontSize:13,color:C.textBright,fontWeight:700,marginBottom:7}}>{a.name}</div>
-                <div style={{fontSize:12,color:C.textDim,lineHeight:1.8,whiteSpace:"pre-line"}}>{a.body}</div>
+                <div style={{fontSize:15,color:C.textBright,fontWeight:700,marginBottom:7}}>{a.name}</div>
+                <div style={{fontSize:14,color:C.textDim,lineHeight:1.8,whiteSpace:"pre-line"}}>{a.body}</div>
               </div>
             ))}
           </>
@@ -1280,7 +1661,7 @@ export default function Destiny2Guide() {
         {/* ── BUILD CRAFTING ── */}
         {tab==="BUILD CRAFTING" && (
           <>
-            <div style={{fontSize:12,color:C.textDim,letterSpacing:2,marginBottom:14}}>
+            <div style={{fontSize:14,color:C.textDim,letterSpacing:2,marginBottom:14}}>
               EXOTIC FIRST → SUBCLASS → ASPECTS → FRAGMENTS → WEAPONS → MODS → STATS
             </div>
             {BUILD_CRAFTING.filter(b=>!search||f(b.name)||f(b.how)).map((b,i)=>{
@@ -1293,14 +1674,14 @@ export default function Destiny2Guide() {
                     onMouseLeave={e=>e.currentTarget.style.background=open?`${b.color}08`:"transparent"}>
                     <div style={{display:"flex",alignItems:"center",gap:10}}>
                       <span style={{fontSize:18}}>{b.icon}</span>
-                      <span style={{fontSize:14,color:C.textBright,fontWeight:700}}>{b.name}</span>
+                      <span style={{fontSize:16,color:C.textBright,fontWeight:700}}>{b.name}</span>
                     </div>
                     <span style={{color:b.color,fontSize:14,flexShrink:0}}>{open?"▲":"▼"}</span>
                   </div>
                   {open&&(
                     <div style={{padding:"12px 14px"}}>
-                      <div style={{fontSize:13,color:C.text,lineHeight:1.8,whiteSpace:"pre-line",marginBottom:10}}>{b.how}</div>
-                      <div style={{background:`${b.color}08`,padding:"8px 12px",borderLeft:`2px solid ${b.color}55`,fontSize:12,color:b.color,lineHeight:1.6}}>⚡ {b.tip}</div>
+                      <div style={{fontSize:15,color:C.text,lineHeight:1.8,whiteSpace:"pre-line",marginBottom:10}}>{b.how}</div>
+                      <div style={{background:`${b.color}08`,padding:"8px 12px",borderLeft:`2px solid ${b.color}55`,fontSize:14,color:b.color,lineHeight:1.6}}>⚡ {b.tip}</div>
                     </div>
                   )}
                 </div>
@@ -1312,7 +1693,7 @@ export default function Destiny2Guide() {
         {/* ── VENDORS ── */}
         {tab==="VENDORS" && (
           <>
-            <div style={{fontSize:12,color:C.textDim,letterSpacing:2,marginBottom:14}}>
+            <div style={{fontSize:14,color:C.textDim,letterSpacing:2,marginBottom:14}}>
               KEY VENDORS · XÛR EVERY FRIDAY → TUESDAY · MONUMENT OF LOST LIGHTS FOR LEGACY EXOTICS
             </div>
             {VENDORS.filter(v=>!search||f(v.name)||f(v.sells)||f(v.tip)).map((v,i)=>{
@@ -1325,27 +1706,27 @@ export default function Destiny2Guide() {
                     onMouseLeave={e=>e.currentTarget.style.background=open?`${v.color}08`:"transparent"}>
                     <div style={{display:"flex",alignItems:"center",gap:10}}>
                       <span style={{fontSize:18}}>{v.icon}</span>
-                      <span style={{fontSize:14,color:C.textBright,fontWeight:700}}>{v.name}</span>
+                      <span style={{fontSize:16,color:C.textBright,fontWeight:700}}>{v.name}</span>
                     </div>
                     <span style={{color:v.color,fontSize:14,flexShrink:0}}>{open?"▲":"▼"}</span>
                   </div>
                   {open&&(
                     <div style={{padding:"12px 14px"}}>
                       <div style={{marginBottom:8,background:`${v.color}08`,padding:"8px 10px",borderLeft:`2px solid ${v.color}44`}}>
-                        <div style={{fontSize:10,letterSpacing:2,color:v.color,marginBottom:3}}>📍 LOCATION</div>
-                        <div style={{fontSize:12,color:C.text,lineHeight:1.6}}>{v.location}</div>
+                        <div style={{fontSize:12,letterSpacing:2,color:v.color,marginBottom:3}}>📍 LOCATION</div>
+                        <div style={{fontSize:14,color:C.text,lineHeight:1.6}}>{v.location}</div>
                       </div>
                       <div style={{marginBottom:8}}>
-                        <div style={{fontSize:10,letterSpacing:2,color:C.gold,marginBottom:3}}>SELLS / OFFERS</div>
-                        <div style={{fontSize:12,color:C.textDim,lineHeight:1.7,whiteSpace:"pre-line"}}>{v.sells}</div>
+                        <div style={{fontSize:12,letterSpacing:2,color:C.gold,marginBottom:3}}>SELLS / OFFERS</div>
+                        <div style={{fontSize:14,color:C.textDim,lineHeight:1.7,whiteSpace:"pre-line"}}>{v.sells}</div>
                       </div>
                       {v.currency&&(
                         <div style={{marginBottom:8,background:`${C.gold}08`,padding:"8px 10px",borderLeft:`2px solid ${C.gold}44`}}>
-                          <div style={{fontSize:10,letterSpacing:2,color:C.gold,marginBottom:3}}>CURRENCY</div>
-                          <div style={{fontSize:12,color:C.textDim,lineHeight:1.7,whiteSpace:"pre-line"}}>{v.currency}</div>
+                          <div style={{fontSize:12,letterSpacing:2,color:C.gold,marginBottom:3}}>CURRENCY</div>
+                          <div style={{fontSize:14,color:C.textDim,lineHeight:1.7,whiteSpace:"pre-line"}}>{v.currency}</div>
                         </div>
                       )}
-                      <div style={{background:`${v.color}08`,padding:"8px 12px",borderLeft:`2px solid ${v.color}55`,fontSize:12,color:v.color,lineHeight:1.6}}>⚡ {v.tip}</div>
+                      <div style={{background:`${v.color}08`,padding:"8px 12px",borderLeft:`2px solid ${v.color}55`,fontSize:14,color:v.color,lineHeight:1.6}}>⚡ {v.tip}</div>
                     </div>
                   )}
                 </div>
@@ -1357,7 +1738,7 @@ export default function Destiny2Guide() {
         {/* ── LOADOUTS ── */}
         {tab==="LOADOUTS" && (
           <>
-            <div style={{fontSize:12,color:C.textDim,letterSpacing:2,marginBottom:14}}>
+            <div style={{fontSize:14,color:C.textDim,letterSpacing:2,marginBottom:14}}>
               MONUMENT OF TRIUMPH META · TOP 5 PER CLASS · UPDATED SEP 2026
             </div>
 
@@ -1377,10 +1758,10 @@ export default function Destiny2Guide() {
 
             {/* Best weapons callout */}
             <div style={{background:C.panel,border:`1px solid ${C.border}`,borderLeft:`3px solid ${C.gold}`,padding:"10px 14px",marginBottom:14}}>
-              <div style={{fontSize:10,letterSpacing:3,color:C.gold,marginBottom:6}}>🔫 WEAPONS THAT FIT EVERY BUILD</div>
+              <div style={{fontSize:12,letterSpacing:3,color:C.gold,marginBottom:6}}>🔫 WEAPONS THAT FIT EVERY BUILD</div>
               <div style={{display:"flex",flexWrap:"wrap",gap:5}}>
                 {["Praxic Blade (Heavy Sword)","Still Hunt (Special Sniper)","Khvostov 7G-0X (Primary)","Outbreak Perfected (Primary)","Arbalest (Special Linear — +33% vs Barrier Champions)","Conditional Finality (Shotgun — stuns 2 Champion types)"].map((w,i)=>(
-                  <span key={i} style={{fontSize:10,color:C.gold,background:`${C.gold}10`,border:`1px solid ${C.gold}33`,padding:"2px 7px"}}>{w}</span>
+                  <span key={i} style={{fontSize:14,color:C.gold,background:`${C.gold}10`,border:`1px solid ${C.gold}33`,padding:"2px 7px"}}>{w}</span>
                 ))}
               </div>
             </div>
@@ -1399,10 +1780,10 @@ export default function Destiny2Guide() {
                     <div style={{flex:1}}>
                       <div style={{display:"flex",alignItems:"center",gap:8,flexWrap:"wrap",marginBottom:4}}>
                         <span style={{fontSize:11,letterSpacing:2,color:b.rank===`S`?C.gold:C.teal,background:b.rank===`S`?`${C.gold}20`:`${C.teal}20`,border:`1px solid ${b.rank===`S`?C.gold:C.teal}55`,padding:"1px 7px",fontWeight:900}}>{b.rank}-TIER</span>
-                        <span style={{fontSize:14,color:C.textBright,fontWeight:700}}>{b.name}</span>
-                        <span style={{fontSize:10,color:col,background:`${col}15`,border:`1px solid ${col}44`,padding:"1px 6px",letterSpacing:1}}>{b.subclass.toUpperCase()}</span>
+                        <span style={{fontSize:16,color:C.textBright,fontWeight:700}}>{b.name}</span>
+                        <span style={{fontSize:14,color:col,background:`${col}15`,border:`1px solid ${col}44`,padding:"1px 6px",letterSpacing:1}}>{b.subclass.toUpperCase()}</span>
                       </div>
-                      <div style={{fontSize:11,color:C.textDim,letterSpacing:1}}>Exotic: <span style={{color:C.gold}}>{b.exotic}</span></div>
+                      <div style={{fontSize:15,color:C.textDim,letterSpacing:1}}>Exotic: <span style={{color:C.gold}}>{b.exotic}</span></div>
                     </div>
                     <span style={{color:col,fontSize:14,flexShrink:0,marginTop:2}}>{open?"▲":"▼"}</span>
                   </div>
@@ -1412,35 +1793,35 @@ export default function Destiny2Guide() {
                       {/* Exotic weapon */}
                       {b.exoticWeapon&&(
                         <div style={{marginBottom:10,background:`${C.gold}08`,padding:"7px 10px",borderLeft:`2px solid ${C.gold}44`}}>
-                          <div style={{fontSize:10,letterSpacing:2,color:C.gold,marginBottom:2}}>EXOTIC WEAPON</div>
-                          <div style={{fontSize:12,color:C.text}}>{b.exoticWeapon}</div>
+                          <div style={{fontSize:12,letterSpacing:2,color:C.gold,marginBottom:2}}>EXOTIC WEAPON</div>
+                          <div style={{fontSize:14,color:C.text}}>{b.exoticWeapon}</div>
                         </div>
                       )}
                       {/* Aspects + Stats */}
                       <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8,marginBottom:10}}>
                         <div style={{background:`${col}08`,padding:"7px 10px",borderLeft:`2px solid ${col}44`}}>
-                          <div style={{fontSize:10,letterSpacing:2,color:col,marginBottom:4}}>KEY ASPECTS</div>
+                          <div style={{fontSize:12,letterSpacing:2,color:col,marginBottom:4}}>KEY ASPECTS</div>
                           {b.aspects.map((a,ai)=>(
-                            <div key={ai} style={{fontSize:11,color:C.text,marginBottom:ai<b.aspects.length-1?3:0}}>▸ {a}</div>
+                            <div key={ai} style={{fontSize:15,color:C.text,marginBottom:ai<b.aspects.length-1?3:0}}>▸ {a}</div>
                           ))}
                         </div>
                         <div style={{background:`${C.arc}08`,padding:"7px 10px",borderLeft:`2px solid ${C.arc}44`}}>
-                          <div style={{fontSize:10,letterSpacing:2,color:C.arc,marginBottom:4}}>TARGET STATS</div>
-                          <div style={{fontSize:11,color:C.text,lineHeight:1.7}}>{b.stats}</div>
+                          <div style={{fontSize:12,letterSpacing:2,color:C.arc,marginBottom:4}}>TARGET STATS</div>
+                          <div style={{fontSize:15,color:C.text,lineHeight:1.7}}>{b.stats}</div>
                         </div>
                       </div>
                       {/* Loop */}
                       <div style={{marginBottom:10}}>
-                        <div style={{fontSize:10,letterSpacing:2,color:C.green,marginBottom:4}}>⚙ HOW THE LOOP WORKS</div>
-                        <div style={{fontSize:12,color:C.text,lineHeight:1.8,background:`${C.green}06`,padding:"8px 10px",borderLeft:`2px solid ${C.green}33`}}>{b.loop}</div>
+                        <div style={{fontSize:12,letterSpacing:2,color:C.green,marginBottom:4}}>⚙ HOW THE LOOP WORKS</div>
+                        <div style={{fontSize:14,color:C.text,lineHeight:1.8,background:`${C.green}06`,padding:"8px 10px",borderLeft:`2px solid ${C.green}33`}}>{b.loop}</div>
                       </div>
                       {/* Best for */}
                       <div style={{marginBottom:10,background:`${col}08`,padding:"7px 10px",borderLeft:`2px solid ${col}44`}}>
-                        <div style={{fontSize:10,letterSpacing:2,color:col,marginBottom:3}}>BEST FOR</div>
-                        <div style={{fontSize:12,color:C.textDim,lineHeight:1.6}}>{b.best}</div>
+                        <div style={{fontSize:12,letterSpacing:2,color:col,marginBottom:3}}>BEST FOR</div>
+                        <div style={{fontSize:14,color:C.textDim,lineHeight:1.6}}>{b.best}</div>
                       </div>
                       {/* Tip */}
-                      <div style={{background:`${C.gold}08`,padding:"8px 12px",borderLeft:`2px solid ${C.gold}55`,fontSize:12,color:C.gold,lineHeight:1.6}}>⚡ {b.tip}</div>
+                      <div style={{background:`${C.gold}08`,padding:"8px 12px",borderLeft:`2px solid ${C.gold}55`,fontSize:14,color:C.gold,lineHeight:1.6}}>⚡ {b.tip}</div>
                     </div>
                   )}
                 </div>
@@ -1452,7 +1833,7 @@ export default function Destiny2Guide() {
         {/* ── LOST SECTORS ── */}
         {tab==="LOST SECTORS" && (
           <>
-            <div style={{fontSize:12,color:C.textDim,letterSpacing:2,marginBottom:14}}>
+            <div style={{fontSize:14,color:C.textDim,letterSpacing:2,marginBottom:14}}>
               DAILY EXOTIC FARM · SOLO ONLY · CHECK ARMOR SLOT BEFORE ENTERING · PLATINUM RATING = BEST ODDS
             </div>
             {/* Info cards */}
@@ -1466,13 +1847,13 @@ export default function Destiny2Guide() {
                     onMouseLeave={e=>e.currentTarget.style.background=open?`${s.color}08`:"transparent"}>
                     <div style={{display:"flex",alignItems:"center",gap:10}}>
                       <span style={{fontSize:18}}>{s.icon}</span>
-                      <span style={{fontSize:14,color:C.textBright,fontWeight:700}}>{s.name}</span>
+                      <span style={{fontSize:16,color:C.textBright,fontWeight:700}}>{s.name}</span>
                     </div>
                     <span style={{color:s.color,fontSize:14,flexShrink:0}}>{open?"▲":"▼"}</span>
                   </div>
                   {open&&(
                     <div style={{padding:"12px 14px"}}>
-                      <div style={{fontSize:13,color:C.text,lineHeight:1.8,whiteSpace:"pre-line"}}>{s.body}</div>
+                      <div style={{fontSize:15,color:C.text,lineHeight:1.8,whiteSpace:"pre-line"}}>{s.body}</div>
                     </div>
                   )}
                 </div>
@@ -1492,7 +1873,7 @@ export default function Destiny2Guide() {
                     {dest.sectors.map((s,si)=>(
                       <div key={si} style={{display:"flex",gap:6,alignItems:"center",marginBottom:si<dest.sectors.length-1?5:0}}>
                         <span style={{width:3,height:3,background:C.teal,flexShrink:0,display:"inline-block"}}/>
-                        <span style={{fontSize:11,color:C.textDim}}>{s}</span>
+                        <span style={{fontSize:15,color:C.textDim}}>{s}</span>
                       </div>
                     ))}
                   </div>
@@ -1505,7 +1886,7 @@ export default function Destiny2Guide() {
         {/* ── ENEMIES ── */}
         {tab==="ENEMIES" && (
           <>
-            <div style={{fontSize:12,color:C.textDim,letterSpacing:2,marginBottom:14}}>
+            <div style={{fontSize:14,color:C.textDim,letterSpacing:2,marginBottom:14}}>
               7 FACTIONS · 3 CHAMPION TYPES · BREAK SHIELDS FIRST · CHAMPIONS NEED MATCHING MODS
             </div>
 
@@ -1527,21 +1908,21 @@ export default function Destiny2Guide() {
                         onMouseLeave={e=>e.currentTarget.style.background=open?`${ch.color}08`:"transparent"}>
                         <div style={{display:"flex",alignItems:"center",gap:10}}>
                           <span style={{fontSize:16}}>{ch.icon}</span>
-                          <span style={{fontSize:14,color:C.textBright,fontWeight:700}}>{ch.type}</span>
+                          <span style={{fontSize:16,color:C.textBright,fontWeight:700}}>{ch.type}</span>
                         </div>
                         <span style={{color:ch.color,fontSize:14,flexShrink:0}}>{open?"▲":"▼"}</span>
                       </div>
                       {open&&(
                         <div style={{padding:"10px 14px"}}>
                           <div style={{marginBottom:8,background:`${C.orange}08`,padding:"7px 10px",borderLeft:`2px solid ${C.orange}44`}}>
-                            <div style={{fontSize:10,letterSpacing:2,color:C.orange,marginBottom:3}}>HOW TO IDENTIFY</div>
-                            <div style={{fontSize:12,color:C.text,lineHeight:1.6}}>{ch.identify}</div>
+                            <div style={{fontSize:12,letterSpacing:2,color:C.orange,marginBottom:3}}>HOW TO IDENTIFY</div>
+                            <div style={{fontSize:14,color:C.text,lineHeight:1.6}}>{ch.identify}</div>
                           </div>
                           <div style={{marginBottom:8,background:`${C.green}08`,padding:"7px 10px",borderLeft:`2px solid ${C.green}44`}}>
-                            <div style={{fontSize:10,letterSpacing:2,color:C.green,marginBottom:3}}>HOW TO COUNTER</div>
-                            <div style={{fontSize:12,color:C.text,lineHeight:1.6}}>{ch.counter}</div>
+                            <div style={{fontSize:12,letterSpacing:2,color:C.green,marginBottom:3}}>HOW TO COUNTER</div>
+                            <div style={{fontSize:14,color:C.text,lineHeight:1.6}}>{ch.counter}</div>
                           </div>
-                          <div style={{background:`${ch.color}08`,padding:"7px 10px",borderLeft:`2px solid ${ch.color}44`,fontSize:12,color:ch.color,lineHeight:1.6}}>⚡ {ch.tip}</div>
+                          <div style={{background:`${ch.color}08`,padding:"7px 10px",borderLeft:`2px solid ${ch.color}44`,fontSize:14,color:ch.color,lineHeight:1.6}}>⚡ {ch.tip}</div>
                         </div>
                       )}
                     </div>
@@ -1567,35 +1948,35 @@ export default function Destiny2Guide() {
                     <div style={{flex:1}}>
                       <div style={{display:"flex",alignItems:"center",gap:8,flexWrap:"wrap",marginBottom:4}}>
                         <span style={{fontSize:16}}>{enemy.icon}</span>
-                        <span style={{fontSize:14,color:C.textBright,fontWeight:700}}>{enemy.name}</span>
-                        <span style={{fontSize:10,color:enemy.color,background:`${enemy.color}15`,border:`1px solid ${enemy.color}44`,padding:"1px 6px",letterSpacing:1}}>Shield: {enemy.shield}</span>
+                        <span style={{fontSize:16,color:C.textBright,fontWeight:700}}>{enemy.name}</span>
+                        <span style={{fontSize:14,color:enemy.color,background:`${enemy.color}15`,border:`1px solid ${enemy.color}44`,padding:"1px 6px",letterSpacing:1}}>Shield: {enemy.shield}</span>
                       </div>
-                      <div style={{fontSize:11,color:C.textDim}}>Found: {enemy.where}</div>
+                      <div style={{fontSize:15,color:C.textDim}}>Found: {enemy.where}</div>
                     </div>
                     <span style={{color:enemy.color,fontSize:14,flexShrink:0,marginTop:2}}>{open?"▲":"▼"}</span>
                   </div>
                   {open&&(
                     <div style={{padding:"12px 14px"}}>
                       <div style={{marginBottom:10,background:`${C.blue}08`,padding:"8px 10px",borderLeft:`2px solid ${C.blue}44`}}>
-                        <div style={{fontSize:10,letterSpacing:2,color:C.blue,marginBottom:4}}>UNIT TYPES</div>
-                        <div style={{fontSize:12,color:C.textDim,lineHeight:1.7}}>{enemy.tiers}</div>
+                        <div style={{fontSize:12,letterSpacing:2,color:C.blue,marginBottom:4}}>UNIT TYPES</div>
+                        <div style={{fontSize:14,color:C.textDim,lineHeight:1.7}}>{enemy.tiers}</div>
                       </div>
                       <div style={{marginBottom:10,background:`${enemy.color}06`,padding:"8px 10px",borderLeft:`2px solid ${enemy.color}44`}}>
-                        <div style={{fontSize:10,letterSpacing:2,color:enemy.color,marginBottom:4}}>SHIELD BEHAVIOR</div>
-                        <div style={{fontSize:12,color:C.text,lineHeight:1.7}}>{enemy.shields}</div>
+                        <div style={{fontSize:12,letterSpacing:2,color:enemy.color,marginBottom:4}}>SHIELD BEHAVIOR</div>
+                        <div style={{fontSize:14,color:C.text,lineHeight:1.7}}>{enemy.shields}</div>
                       </div>
                       <div style={{marginBottom:10}}>
-                        <div style={{fontSize:10,letterSpacing:2,color:C.green,marginBottom:4}}>⚔ HOW TO FIGHT</div>
-                        <div style={{fontSize:13,color:C.text,lineHeight:1.8,background:`${C.green}06`,padding:"8px 10px",borderLeft:`2px solid ${C.green}33`}}>{enemy.howToFight}</div>
+                        <div style={{fontSize:12,letterSpacing:2,color:C.green,marginBottom:4}}>⚔ HOW TO FIGHT</div>
+                        <div style={{fontSize:15,color:C.text,lineHeight:1.8,background:`${C.green}06`,padding:"8px 10px",borderLeft:`2px solid ${C.green}33`}}>{enemy.howToFight}</div>
                       </div>
                       <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8}}>
                         <div style={{background:`${C.red}08`,padding:"7px 10px",borderLeft:`2px solid ${C.red}44`}}>
-                          <div style={{fontSize:10,letterSpacing:2,color:C.red,marginBottom:3}}>CHAMPIONS (ENDGAME)</div>
-                          <div style={{fontSize:12,color:C.textDim,lineHeight:1.5}}>{enemy.champions}</div>
+                          <div style={{fontSize:12,letterSpacing:2,color:C.red,marginBottom:3}}>CHAMPIONS (ENDGAME)</div>
+                          <div style={{fontSize:14,color:C.textDim,lineHeight:1.5}}>{enemy.champions}</div>
                         </div>
                         <div style={{background:`${C.gold}08`,padding:"7px 10px",borderLeft:`2px solid ${C.gold}44`}}>
-                          <div style={{fontSize:10,letterSpacing:2,color:C.gold,marginBottom:3}}>⚡ KEY TIP</div>
-                          <div style={{fontSize:12,color:C.textDim,lineHeight:1.5}}>{enemy.tip}</div>
+                          <div style={{fontSize:12,letterSpacing:2,color:C.gold,marginBottom:3}}>⚡ KEY TIP</div>
+                          <div style={{fontSize:14,color:C.textDim,lineHeight:1.5}}>{enemy.tip}</div>
                         </div>
                       </div>
                     </div>
@@ -1606,7 +1987,7 @@ export default function Destiny2Guide() {
           </>
         )}
 
-        <div style={{marginTop:22,borderTop:`1px solid ${C.border}`,paddingTop:10,fontSize:10,color:C.dimmer,letterSpacing:2,textAlign:"center"}}>
+        <div style={{marginTop:22,borderTop:`1px solid ${C.border}`,paddingTop:10,fontSize:14,color:C.dimmer,letterSpacing:2,textAlign:"center"}}>
           DESTINY 2 · MONUMENT OF TRIUMPH FINAL SANDBOX · JUNE 2026 · GAME REMAINS ONLINE FOREVER
         </div>
       </div>
