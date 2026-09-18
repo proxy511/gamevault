@@ -625,6 +625,7 @@ const LOADOUTS = {
 };
 
 // ─── ORNAMENTS ───────────────────────────────────────────────────────────────
+const ORNAMENTS = [
   { name:"Bright Dust — The Free Currency", color:C.teal, icon:"💠",
     how:"Bright Dust is the free in-game currency used to buy cosmetics from the Eververse store — including armor ornaments, weapon ornaments, shaders, ships, sparrows, and emotes. Cannot be purchased directly, only earned through gameplay.",
     sources:["Seasonal Challenges (largest source — check challenge list for the Bright Dust icon)","Pathfinder track completions","Season Pass free track rewards","Vanguard Alerts — matchmade activity, 250 Bright Dust per 3 completions","Weekly Active Orders — up to 1,500 Bright Dust per week (soft cap)","Daily Challenges — 2,520 Bright Dust across a full 12-week season","Reaching Weekly Rewards Rank 17 in Seasonal Hub — 1,000 Bright Dust","Exotic Orders completions — 200 Bright Dust each, 6,000 cap per season"],
