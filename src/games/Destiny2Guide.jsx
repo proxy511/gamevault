@@ -670,7 +670,7 @@ const QUESTS = [
       "Extract Deepsight Resonance from each red-border Glaive by getting kills with it equipped until the resonance bar fills completely.",
       "Once you have 5 copies of the same Glaive pattern extracted, craft it at the Enclave and select your perks.",
     ],
-    tip:"The Glaive is the only weapon with a built-in shield — hold the block button while the launcher reloads to project a Void barrier blocking incoming fire. This makes Glaives uniquely powerful for aggressive solo content." }
+    tip:"The Glaive is the only weapon with a built-in shield — hold the block button while the launcher reloads to project a Void barrier blocking incoming fire. This makes Glaives uniquely powerful for aggressive solo content." },
 
   { name:"Dual Destiny — Exotic Class Item", cat:"key", reward:"Exotic Class Item (random 2-perk combo)", expansion:"The Final Shape",
     power:"1800+ recommended", players:"EXACTLY 2 — no solo, no 3+",
