@@ -899,27 +899,7 @@ const DUNGEONS = [
 const QUEST_CATS = ["exotic","campaign","key","weekly","raids","dungeons"];
 const QUEST_CAT_LABELS = { exotic:"EXOTIC MISSIONS", campaign:"CAMPAIGNS", key:"KEY QUESTS", weekly:"WEEKLY", raids:"RAIDS", dungeons:"DUNGEONS" };
 const QUEST_CAT_COLORS = { exotic:C.gold, campaign:C.purple, key:C.prismatic, weekly:C.teal, raids:C.red, dungeons:C.orange };
-  { name:"Exotic Quests — How They Work", color:C.gold, icon:"🌟",
-    how:"Exotic quest weapons are available from specific vendors or from completing quests in your Quest log. In the Monument of Triumph state, most exotic quests are permanently available. Start them from the Quest Archive kiosk in the Tower lobby.",
-    find:"Tower → Quest Archive kiosk → Filter by 'Exotic Quests'. Every legacy exotic quest is listed here.",
-    tip:"Exotic Ciphers (from Xur's Xenology quest) are required for some archive purchases. Complete Xur's Xenology every week — it's the easiest free exotic cipher in the game." },
-  { name:"Questline Order for New Players", color:C.blue, icon:"📋",
-    how:"1. Complete the New Light intro mission. 2. Visit the Tower — meet Zavala, Ikora, Cayde's legacy. 3. Complete each expansion campaign in release order (Shadowkeep → Beyond Light → Witch Queen → Lightfall → The Final Shape → Edge of Fate → Renegades). 4. Start expansion-specific exotic quests as you unlock them.",
-    find:"Quest log (left trigger → Quest tab) tracks all active quests. New quests are given by vendors in the Tower.",
-    tip:"The Final Shape campaign is mandatory for Prismatic subclass. Don't skip it." },
-  { name:"Finding Quest Items In-Field", color:C.green, icon:"🔍",
-    how:"Quest items always show on your Director map as glowing icons when you're in the correct destination. Open the map, zoom into the destination, and look for quest markers (exclamation points or diamond shapes).\n\nFor kill-based quest steps: check your quest description for the enemy type and destination. Patrol the destination and kill matching enemies. Public events and Lost Sectors guarantee encounters.",
-    find:"Ghost scan objects are glowing items in the environment that scan to reveal lore or progress quests. Hold the interact button to scan.",
-    tip:"If a quest step says 'defeat X enemies' in a specific destination, Lost Sectors in that destination spawn enemies in high concentration. Clear them on loop." },
-  { name:"Legacy Exotic Quest Weapons (Notable)", color:C.solar, icon:"🗡️",
-    how:"Outbreak Perfected (Zero Hour mission), Whisper of the Worm (The Whisper mission), Dead Man's Tale (Presage mission), Hawkmoon (Harbinger mission), Vox Obscura (Operation: Seraph's Shield), Revision Zero (Operation: Seraph's Shield). Each is a dedicated exotic mission replayable weekly.",
-    find:"Director → Destinations → Look for specific icons OR Tower → Quest Archive for the starting quest step.",
-    tip:"These exotic missions drop the weapon on first completion, then have a weekly Deepsight Resonance drop for crafting. Run them weekly until you have the pattern unlocked." },
-  { name:"Vendor Weekly Quests", color:C.teal, icon:"🔄",
-    how:"Each major vendor (Zavala, Shaxx, Drifter, Banshee-44, Saint-14) offers weekly bounty sets and a weekly reputation milestone. Completing them fills their reputation bar for an Engram reward. Each vendor's engrams can be focused at their respective kiosk into specific weapons.",
-    find:"Tower → Visit each vendor → Check their bounty and quest offerings every Tuesday (weekly reset).",
-    tip:"Prioritize whichever vendor sells the weapon you're chasing this week. Focused engrams from reputation give the best targeted loot without endless RNG." },
-];
+
 
 // ─── WEAPON UPGRADES ─────────────────────────────────────────────────────────
 const WEAPON_UPGRADES = [
