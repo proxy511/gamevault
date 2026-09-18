@@ -255,12 +255,12 @@ export default function CronosGuide() {
         {/* Header */}
         <div style={{textAlign:"center",marginBottom:22}}>
           <div style={{display:"inline-block",border:`1px solid ${C.red}44`,borderTop:`2px solid ${C.red}`,padding:"3px 18px",marginBottom:6}}>
-            <span style={{fontSize:11,letterSpacing:5,color:`${C.red}88`}}>BLOOBER TEAM · 2025 · SURVIVAL HORROR</span>
+            <span style={{fontSize:10,letterSpacing:5,color:`${C.red}88`}}>BLOOBER TEAM · 2025 · SURVIVAL HORROR</span>
           </div>
-          <h1 style={{fontSize:22,fontWeight:900,letterSpacing:3,margin:"5px 0 3px",color:C.textBright,textTransform:"uppercase",textShadow:`0 0 24px ${C.red}33`}}>
+          <h1 style={{fontSize:21,fontWeight:900,letterSpacing:3,margin:"5px 0 3px",color:C.textBright,textTransform:"uppercase",textShadow:`0 0 24px ${C.red}33`}}>
             CRONOS: THE NEW DAWN
           </h1>
-          <p style={{fontSize:12,color:C.textDim,letterSpacing:2,margin:0}}>
+          <p style={{fontSize:10,color:C.textDim,letterSpacing:2,margin:0}}>
             SURVIVAL GUIDE · WEAPONS · UPGRADES · ENEMIES
           </p>
         </div>
@@ -277,7 +277,7 @@ export default function CronosGuide() {
                 border:active?`1px solid ${col}`:`1px solid ${C.border}`,
                 borderTop:active?`2px solid ${col}`:"2px solid transparent",
                 color:active?col:C.dim,
-                cursor:"pointer",fontSize:12,letterSpacing:3,...F,fontWeight:active?700:400,
+                cursor:"pointer",fontSize:11,letterSpacing:3,...F,fontWeight:active?700:400,
                 whiteSpace:"nowrap",
               }}>{t}</button>
             );
@@ -295,7 +295,7 @@ export default function CronosGuide() {
         {/* ── SURVIVAL ── */}
         {tab==="SURVIVAL" && (
           <>
-            <div style={{fontSize:12,color:C.textDim,letterSpacing:2,marginBottom:14}}>
+            <div style={{fontSize:11,color:C.textDim,letterSpacing:2,marginBottom:14}}>
               CORE RULES · LEARN THESE BEFORE ANYTHING ELSE
             </div>
             {SURVIVAL.filter(s=>!search||filterText(s.title)||filterText(s.body)||filterText(s.tip)).map((s,i)=>{
@@ -315,8 +315,8 @@ export default function CronosGuide() {
                   </div>
                   {open && (
                     <div style={{padding:"12px 14px"}}>
-                      <div style={{fontSize:14,color:C.text,lineHeight:1.8,marginBottom:10,whiteSpace:"pre-line"}}>{s.body}</div>
-                      <div style={{background:`${s.color}08`,padding:"8px 12px",borderLeft:`2px solid ${s.color}66`,fontSize:13,color:s.color,lineHeight:1.6}}>
+                      <div style={{fontSize:13,color:C.text,lineHeight:1.8,marginBottom:10,whiteSpace:"pre-line"}}>{s.body}</div>
+                      <div style={{background:`${s.color}08`,padding:"8px 12px",borderLeft:`2px solid ${s.color}66`,fontSize:12,color:s.color,lineHeight:1.6}}>
                         ⚡ {s.tip}
                       </div>
                     </div>
@@ -330,7 +330,7 @@ export default function CronosGuide() {
         {/* ── WEAPONS ── */}
         {tab==="WEAPONS" && (
           <>
-            <div style={{fontSize:12,color:C.textDim,letterSpacing:2,marginBottom:14}}>
+            <div style={{fontSize:11,color:C.textDim,letterSpacing:2,marginBottom:14}}>
               ALL WEAPONS · ALWAYS CHARGE BEFORE FIRING · RAPID FIRE IS FOR BARRELS ONLY
             </div>
             {/* Mobile cards */}
@@ -500,7 +500,7 @@ export default function CronosGuide() {
         {/* ── ENEMIES ── */}
         {tab==="ENEMIES" && (
           <>
-            <div style={{fontSize:12,color:C.textDim,letterSpacing:2,marginBottom:14}}>
+            <div style={{fontSize:11,color:C.textDim,letterSpacing:2,marginBottom:14}}>
               BURN EVERY CORPSE · HEADSHOTS ALWAYS · MERGES ARE PREVENTABLE
             </div>
             {ENEMIES.filter(e=>!search||filterText(e.name)||filterText(e.how)||filterText(e.weakness)).map((enemy,i)=>{
