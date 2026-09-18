@@ -624,10 +624,7 @@ const LOADOUTS = {
   ],
 };
 
-// ─── COMPONENT ────────────────────────────────────────────────────────────────
-const TABS = ["BASICS","CLASSES","EXPANSIONS","ACTIVITIES","FARMING","QUESTS","ORNAMENTS","BOUNTIES","WEAPON UPGRADES","ARMOR & STATS","BUILD CRAFTING","VENDORS","LOADOUTS"];
-const TAB_COLORS = { BASICS:C.blue, CLASSES:C.gold, EXPANSIONS:C.purple, ACTIVITIES:C.orange, FARMING:C.green, QUESTS:C.cyan, ORNAMENTS:C.pink, BOUNTIES:C.teal, "WEAPON UPGRADES":C.solar, "ARMOR & STATS":C.arc, "BUILD CRAFTING":C.prismatic, VENDORS:C.strand, LOADOUTS:C.gold };
-const ORNAMENTS = [
+// ─── ORNAMENTS ───────────────────────────────────────────────────────────────
   { name:"Bright Dust — The Free Currency", color:C.teal, icon:"💠",
     how:"Bright Dust is the free in-game currency used to buy cosmetics from the Eververse store — including armor ornaments, weapon ornaments, shaders, ships, sparrows, and emotes. Cannot be purchased directly, only earned through gameplay.",
     sources:["Seasonal Challenges (largest source — check challenge list for the Bright Dust icon)","Pathfinder track completions","Season Pass free track rewards","Vanguard Alerts — matchmade activity, 250 Bright Dust per 3 completions","Weekly Active Orders — up to 1,500 Bright Dust per week (soft cap)","Daily Challenges — 2,520 Bright Dust across a full 12-week season","Reaching Weekly Rewards Rank 17 in Seasonal Hub — 1,000 Bright Dust","Exotic Orders completions — 200 Bright Dust each, 6,000 cap per season"],
@@ -691,8 +688,6 @@ const BOUNTIES = [
 ];
 
 // ─── COMPONENT ────────────────────────────────────────────────────────────────
-const TABS = ["BASICS","CLASSES","EXPANSIONS","ACTIVITIES","FARMING","QUESTS","ORNAMENTS","BOUNTIES"];
-const TAB_COLORS = { BASICS:C.blue, CLASSES:C.gold, EXPANSIONS:C.purple, ACTIVITIES:C.orange, FARMING:C.green, QUESTS:C.cyan, ORNAMENTS:C.pink, BOUNTIES:C.teal };
 
 export default function Destiny2Guide() {
   const [tab, setTab] = useState("BASICS");
